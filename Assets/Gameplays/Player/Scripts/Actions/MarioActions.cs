@@ -1,0 +1,533 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public abstract class MarioActions : CommonActions
+{
+    // protected PlayerInfo info;
+    [Header("共通エフェクト")]
+    // public GameObject sprintEffect;
+    // public GameObject groundPoundEffect;
+    // private float sprintTime = 1f;
+    // private bool sprint;
+    // private bool underwaterPrevious = false;
+    // protected bool gravityControl;
+
+    //操作等
+    // public sbyte actionId = 0;
+
+    // protected PlayerVoiceManager voices;
+
+    [Header("効果音")]
+    public AudioClip jumpTurn;
+    public AudioClip jumpBroad;
+    // public AudioClip throwFireball;
+    // public AudioClip throwIceball;
+    // public AudioClip hipDropPre;
+    // public AudioClip hipDropLand;
+    public AudioClip wallJump;
+    [Header("ボイス")]
+    public AudioClip[] jumpBroadVoices;
+
+    protected bool canSlideOnWall = true;
+    // protected bool continueJumping = false;
+
+    // protected bool groundPound = false;
+
+    Vector3 contactNormal;
+
+    void Start()
+    {
+        info = this.GetComponent<PlayerInfo>();
+        info.Stompable = true;
+        // initialStompable = true;
+        info.playerType = 0;
+        info.desacelerar = true;
+
+        voices = GetComponent<PlayerVoiceManager>();
+    }
+    // Update is called once per frame
+    public void actions()
+    {
+        enabledDash = true;
+        enabledGroundPound = true;
+        enabledFireball = true;
+        enabledToSwim = true;
+        commonActions();
+        /*
+        共通する技
+        ・360°歩行（物理）
+        ・ダッシュ
+        ・しゃがみジャンプ
+        ・幅跳び
+        ・横宙返り
+        ・壁キック
+        ・ヒップドロップ
+        */
+        // bool crouchButton = info.GetCrouchButton("LB") || info.GetCrouchButton("RB");
+        bool crouchButton = info.GetCrouchButton("RB");
+        
+        if (crouchButton && info.Grounded && !info.Crouching && !info.rolling) {
+            if (info.GroundNormal != Vector3.up) {
+                if (info.XZmag <= info.Friction) {
+                    info.VelocitySetUp(info.skin.forward * info.Friction * 2);
+                }
+                info.rolling = true;
+            } else {
+                info.Crouching = true;
+            }
+        } else if (!crouchButton && info.Grounded && info.Crouching && !info.rolling && !info.isNarrow()) {
+            info.Crouching = false;
+        }
+        if (info.Crouching) {
+            this.GetComponent<CapsuleCollider>().height = 2.4f;
+        } else {
+            // this.GetComponent<CapsuleCollider>().height = 3.5f;
+            this.GetComponent<CapsuleCollider>().height = info.InitialColliderHeight;
+        }
+
+        if (info.rolling && !crouchButton) {
+            info.rolling = false;
+        }
+
+        bool jumpButton = info.Buttons["A"] || info.Buttons["B"];
+
+        if ((info.ButtonsDown["A"] || info.ButtonsDown["B"]) && info.Grounded && !info.underwater) {
+            info.rolling = false;
+
+            if (info.input.magnitude > 0 && crouchButton && info.XZmag > 0 && !info.isNarrow() && !info.giant) {
+                //幅跳び
+                voices.VoicePlay(jumpBroadVoices, true);
+                info.SoundPlay(jumpBroad);
+                actionId = 2;
+                info.Crouching = false;
+
+                info.constantChange("grv", info.Gravity * 0.64f);
+                // info.constantChange("airfrc", 0.05f);
+                info.ForwardSetUp(Vector3.zero, 40f);
+                // info.ForwardSetUp(Vector3.zero, Math.Min(40f, info.XZmag + 10f));
+                info.YvelSetUp(25f);
+            } else {
+                if (info.skidding && !info.giant) {
+                    //横宙返り
+                    info.SoundPlay(jumpTurn);
+                    actionId = 3;
+
+                    info.ForwardSetUp(Vector3.zero, -5f);
+                    info.YvelSetUp(40f);
+                } else {
+                    if (actionId != 5) {
+                        info.Jump();
+                        voices.Jump();
+                    }
+                }
+            }
+        // } else if ((info.ButtonsDown["A"] || info.ButtonsDown["B"]) && info.underwater) {
+        //     info.Swim();
+        }
+
+        switch (actionId) {
+            case 2:
+            //幅跳び
+            canSlideOnWall = false;
+            gravityControl = false;
+            // info.axisInput = false;
+
+            if (info.Grounded) {
+                canSlideOnWall = true;
+                actionId = 0;
+                info.constantChange("airfrc", info.AirFrc);
+                info.axisInput = true;
+            }
+            break;
+
+            case 3:
+            //横宙返り
+            gravityControl = !(info.finalVelocity.y > 0);
+            if (!gravityControl) info.constantChange("grv", info.Gravity / 2f);
+
+            if (info.Grounded || info.canWallJump) {
+                if (!info.canWallJump) actionId = 0;
+                info.axisInput = true;
+            }
+            break;
+
+            case 4:
+            //壁キック
+            gravityControl = true;
+            if (info.Grounded) {
+                actionId = 0;
+            }
+            break;
+            
+            case 5:
+            //ヒップドロップ
+            if (info.Grounded) {
+                if (info.ButtonsDown["A"] && !info.giant) {
+                    //ヒップドロップジャンプ
+                    info.SoundPlay(jumpBroad);
+                    info.groundAttack = false;
+                    StopCoroutine("GroundPound");
+                    info.YvelSetUp(60f);
+
+                    info.axisInput = true;
+                    groundPound = false;
+                    gravityControl = false;
+                    actionId = 0;
+                    canSlideOnWall = true;
+                }
+            } else {
+                if (!info.activePhysics && info.ButtonsDown["X"] && !info.giant) {
+                    //ボディアタック
+                    info.SoundPlay(jumpBroad);
+                    info.activePhysics = true;
+                    info.groundAttack = false;
+                    info.axisInput = true;
+                    StopCoroutine("GroundPound");
+                    info.ForwardSetUp(info.skin.forward, 40f);
+                    info.YvelSetUp(10f);
+                    info.constantChange("airfrc", 0.05f);
+                    info.constantChange("grv", info.Gravity);
+
+                    groundPound = false;
+                    actionId = 6;
+                }
+            }
+            break;
+
+            case 6:
+            canSlideOnWall = false;
+            gravityControl = false;
+                if (info.Grounded)
+                {
+                    canSlideOnWall = true;
+                    info.axisInput = true;
+                    actionId = 0;
+                    info.constantChange("airfrc", info.AirFrc);
+                }
+            break;
+        }
+        if (info.Grounded && !gravityControl && actionId == 0) {
+            gravityControl = true;
+        }
+
+        if (info.underwater)
+        {
+            if (info.Grounded)
+            {
+                info.constantChange("top", info.U_TopSpeed);
+            }
+            else
+            {
+                // info.constantChange("top", (info.TopSpeed / 3f) * 4f);
+                info.constantChange("top", info.U_TopSpeed * 1.5f);
+            }
+            if (info.finalVelocity.y > 0)
+            {
+                info.constantChange("grv", 0.625f);
+            }
+            else
+            {
+                info.constantChange("grv", info.U_Gravity);
+            }
+        }
+        // }
+        // else
+        // {
+        //     if (gravityControl && !info.gravityLock)
+        //     {
+        //         if ((info.finalVelocity.y >= 20 || continueJumping) && jumpButton)
+        //         {
+        //             info.constantChange("grv", info.Gravity / 2f); //例）0.625f
+        //         }
+        //         else
+        //         {
+        //             info.constantChange("grv", info.Gravity);
+        //         }
+        //     }
+
+        //     if (info.XZmag >= 30)
+        //     {
+        //         info.constantChange("jmp", info.JumpForce + 2.50f); //例）39.375f
+        //     }
+        //     else if (info.XZmag >= 20)
+        //     {
+        //         info.constantChange("jmp", info.JumpForce + 1.25f); //例）36.875f
+        //     }
+        //     else if (info.XZmag >= 10)
+        //     {
+        //         info.constantChange("jmp", info.JumpForce + 0.625f); //例）35.625f
+        //     }
+        //     else
+        //     {
+        //         info.constantChange("jmp", info.JumpForce); //例）34.375f
+        //     }
+
+        //     if (info.Grounded)
+        //     {
+        //         if ((info.Buttons["X"] || info.Buttons["Y"]))
+        //         {
+        //             if (sprintTime > 0 && info.XZmag >= info.TopSpeed - 2.5f)
+        //             {
+        //                 // if (sprintTime >= 1f) Instantiate(sprintEffect, transform.position, info.skin.rotation);
+        //                 sprintTime -= Time.deltaTime;
+        //                 info.constantChange("top", info.TopSpeed * (1f + (1f - sprintTime) * 0.25f));
+        //             }
+        //             if (sprintTime <= 0 && !sprint)
+        //             {
+        //                 if (!info.rolling) Instantiate(sprintEffect, transform.position, info.skin.rotation);
+        //                 sprint = true;
+        //                 info.ForwardSetUp(Vector3.zero, info.TopSpeed * 1.5f);
+        //                 info.constantChange("top", Math.Min(30f, info.TopSpeed * 1.5f)); //例）30f
+        //             }
+        //         }
+        //         else
+        //         {
+        //             sprint = false;
+        //             sprintTime = 1f;
+        //             info.constantChange("top", info.TopSpeed);
+        //         }
+        //     }
+        //     else
+        //     {
+        //         if (info.XZmag > info.TopSpeed * 1.25f)
+        //         {
+        //             sprintTime = 0f;
+        //         }
+        //         else
+        //         {
+        //             sprintTime = 1f;
+        //         }
+        //         sprint = false;
+        //     }
+        // }
+        // if (sprint) {
+        //     info.dustTrailEffect();
+        // }
+
+        // if (info.underwater != underwaterPrevious) {
+        //     if (!info.underwater && jumpButton) {
+        //         info.YvelSetUp(31.875f);
+        //     } else if (info.underwater) {
+        //         info.YvelSetUp(info.finalVelocity.y / 4f);
+        //     }
+        // }
+        // underwaterPrevious = info.underwater;
+
+        if (info.canWallJump && info.finalVelocity.y < 0) {
+            info.constantChange("terminal", -30f);
+
+            Vector3 pos = transform.position - contactNormal;
+            Instantiate(info.dustTrail, pos, transform.rotation);
+
+            if (info.ButtonsDown["A"]) {
+                //壁キック
+                info.SoundPlay(wallJump);
+                this.transform.position += contactNormal;
+                info.ForwardSetUp(contactNormal, 15f);
+                info.YvelSetUp(info.JumpForce);
+                info.canWallJump = false;
+
+                voices.Jump();
+            }
+        } else {
+            info.constantChange("terminal", info.TerminalVelocity);
+        }
+        if (GetComponent<PlayerAnimManager>().skin != null) {
+            GetComponent<PlayerAnimManager>().skin.SetBool("WallSliding", info.canWallJump);
+        }
+
+        enabledGroundPound = (actionId == 0 || (actionId == 4 && !info.canWallJump));
+        // if (!info.Grounded && (info.GetCrouchButtonDown("LB") || info.GetCrouchButtonDown("RB")) && !groundPound && (actionId == 0 || (actionId == 4 && !info.canWallJump))) {
+        //     groundPound = true;
+        //     StartCoroutine("GroundPound");
+        // }
+
+        this.GetComponent<PlayerAnimManager>().actionId = actionId;
+
+
+        // if (info.ButtonsDown["X"] && info.powerUpActive == 1) {
+        //     info.SoundPlay(throwFireball);
+            
+        //     FireBall fire = Instantiate(info.fireBall, transform.position + info.skin.forward, info.skin.rotation).GetComponent<FireBall>();
+        //     fire.player = info;
+        // }
+        // if (info.ButtonsDown["X"] && info.powerUpActive == 2) {
+        //     info.SoundPlay(throwIceball);
+            
+        //     IceBall ice = Instantiate(info.iceBall, transform.position + info.skin.forward, info.skin.rotation).GetComponent<IceBall>();
+        //     ice.player = info;
+        // }
+        // if (info.ButtonsDown["X"] && info.powerUpActive == 3) {
+        //     //info.SoundPlay(throwIceball);
+            
+        //     ThunderBeam beam = Instantiate(info.thunderBeam, transform.position + info.skin.forward, info.skin.rotation).GetComponent<ThunderBeam>();
+        //     beam.player = info;
+        // }
+
+        if (!info.canWallJump && info.lockWallCollision) {
+            info.lockWallCollision = false;
+        }
+    }
+    void OnCollisionEnter (Collision hit)
+    {
+        if (info.isGroundLayerC(hit)) {
+            ContactPoint contact = hit.contacts[0];
+            if (!info.Grounded && contact.normal.y < 0.1f && !info.canWallJump && !info.underwater && (actionId == 2 || actionId == 6)) {
+                voices.VoicePlay(voices.HurtVoices, true);
+                info.SoundPlay(info.damageSound);
+                StartCoroutine("HitWall", -info.skin.forward);
+            }
+        }
+    }
+    IEnumerator HitWall(Vector3 direction) {
+        info.constantChange("grv", info.Gravity);
+        info.canInput = false;
+        actionId = -1;
+        info.Stompable = false;
+
+        Vector3 damageVelocity = direction.normalized * 15f;
+        damageVelocity.y = 22f;
+        info.VelocitySetUp(damageVelocity);
+
+        Vector3 XZvel = new Vector3(damageVelocity.x, 0, damageVelocity.z) * -1;
+
+        while (!info.Grounded) {
+            info.skin.transform.forward = XZvel.normalized;
+            yield return new WaitForSeconds(0);
+        }
+
+        canSlideOnWall = true;
+        actionId = 0;
+        info.canInput = true;
+        info.axisInput = true;
+        info.tookDamage = false;
+        info.Stompable = true;
+    }
+    // public IEnumerator GroundPound() {
+    //     info.SoundPlay(hipDropPre);
+    //     info.VelocitySetUp(Vector3.zero);
+    //     actionId = 5;
+    //     info.axisInput = false;
+    //     info.activePhysics = false;
+
+    //     yield return new WaitForSeconds(0.3f);
+
+    //     info.groundAttack = true;
+    //     info.activePhysics = true;
+    //     info.VelocitySetUp(Vector3.up * info.TerminalVelocity);
+
+    //     yield return new WaitForSeconds(0.03f);
+
+    //     while (!info.Grounded && actionId == 5) {
+    //         yield return new WaitForSeconds(0f);
+
+    //         if (info.finalVelocity.y > 0) {
+    //             canSlideOnWall = true;
+    //             info.axisInput = true;
+    //             groundPound = false;
+    //             actionId = 0;
+    //             yield break;
+    //         }
+    //     }
+
+    //     info.SoundPlay(hipDropLand);
+    //     Vector3 pos = transform.position - (transform.up * (info.ColliderHeight / 2f));
+    //     Instantiate(groundPoundEffect, pos, Quaternion.FromToRotation(Vector3.up, info.GroundNormal));
+
+    //     if (info.GroundNormal != Vector3.up) {
+    //         info.groundAttack = false;
+    //         info.ForwardSetUp(Vector3.zero, 20f);
+    //         info.rolling = true;
+    //     } else {
+    //         if (!(info.GetCrouchButton("LB") || info.GetCrouchButton("RB"))) {
+    //             info.groundAttack = false;
+    //         }
+    //         yield return new WaitForSeconds(0.5f);
+    //         if (info.groundAttack) {
+    //             while ((info.GetCrouchButton("LB") || info.GetCrouchButton("RB")) && actionId == 5) {
+    //                 yield return new WaitForSeconds(0f);
+    //             }
+
+    //             info.groundAttack = false;
+    //         }
+    //     }
+
+    //     canSlideOnWall = true;
+    //     info.axisInput = true;
+    //     groundPound = false;
+    //     actionId = 0;
+    // }
+
+    public IEnumerator DamageAnimation(Vector3 direction) {
+        StartCoroutine("HitWall", direction);
+        yield return null;
+    }
+    public IEnumerator DeathAnimation() {
+        info.LookFront();
+
+        info.VelocitySetUp(Vector3.zero);
+        info.activePhysics = false;
+        GetChildren(info.skin.gameObject, "Top Priority");
+        actionId = -2;
+
+        this.GetComponent<CapsuleCollider>().isTrigger = true;
+
+        yield return new WaitForSeconds(0.8f);
+
+        voices.Death();
+    }
+    // void GetChildren(GameObject obj, string layer) {
+    //     Transform children = obj.GetComponentInChildren<Transform>();
+    //     //子要素がいなければ終了
+    //     if (children.childCount == 0) {
+    //         return;
+    //     }
+    //     foreach(Transform ob in children) {
+    //         //ここに何かしらの処理
+    //         ob.gameObject.layer = LayerMask.NameToLayer(layer);
+    //         GetChildren(ob.gameObject, layer);
+    //     }
+    // }
+
+    public void Reset() {
+        info.activePhysics = true;
+        info.activeCollision = true;
+        canSlideOnWall = true;
+        actionId = 0;
+        GetComponent<CapsuleCollider>().isTrigger = false;
+        GetChildren(info.skin.gameObject, "Ignore Raycast");
+    }
+
+    /* 壁キック前の判定 */
+    void OnCollisionStay (Collision hit)
+    {
+        if (info.isGroundLayerC(hit) && actionId != 5 && !info.giant) {
+            ContactPoint contact = hit.contacts[0];
+            if (!info.Grounded && contact.normal.y < 0.1f && !info.canWallJump && !info.underwater && canSlideOnWall && info.finalVelocity.y < 0) {
+                //Debug.Log(Vector3.Angle(info.skin.forward, contact.normal));
+                //if (Vector3.Angle(info.skin.forward, contact.normal) >= 135f) {
+                if (Vector3.Angle(info.input, contact.normal) >= 135f) {
+                    if (!info.axisInput) info.axisInput = true;
+                    if (actionId != 4) info.ForwardSetUp(-contact.normal, 1f);
+                    actionId = 4;
+                    info.lockWallCollision = true;
+                    Debug.DrawRay(contact.point, contact.normal, Color.red, 1.25f);
+                    contactNormal = contact.normal;
+                    info.canWallJump = true;
+                }
+            }
+        }
+    }
+    void OnCollisionExit(Collision hit) {
+        if (
+            (info.isGroundLayerC(hit) && info.canWallJump && info.finalVelocity.y < 0)
+            || (actionId == 4 && Vector3.Angle(info.input, contactNormal) < 135f)
+        ) {
+            canSlideOnWall = true;
+            actionId = 0;
+            info.canWallJump = false;
+        }
+    }
+}

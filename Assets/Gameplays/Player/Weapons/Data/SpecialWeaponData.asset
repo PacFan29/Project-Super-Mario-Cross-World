@@ -1,0 +1,341 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52595e948e80a4a469f7f7ba625dfa67, type: 3}
+  m_Name: SpecialWeaponData
+  m_EditorClassIdentifier: 
+  rush:
+    Enable: 0
+    weaponIcon: {fileID: 0}
+    Name: "\u30E9\u30C3\u30B7\u30E5"
+    WeaponColor: {r: 1, g: 0, b: 0, a: 1}
+    Type: 11
+    enableCharacters: 00000000
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 1
+    consumptionType: 0
+    prefab: {fileID: 0}
+    reloadTime: 0
+    limitCount: 0
+  rollRush:
+    Enable: 0
+    weaponIcon: {fileID: 0}
+    Name: "\u30E9\u30C3\u30B7\u30E5"
+    WeaponColor: {r: 1, g: 0, b: 0, a: 1}
+    Type: 11
+    enableCharacters: 01000000
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 1
+    consumptionType: 0
+    prefab: {fileID: 0}
+    reloadTime: 0
+    limitCount: 0
+  vaccumArm:
+    Enable: 1
+    weaponIcon: {fileID: 0}
+    Name: "\u30D0\u30AD\u30E5\u30FC\u30E0\u30A2\u30FC\u30E0"
+    WeaponColor: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 1}
+    Type: 11
+    enableCharacters: 01000000
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 1
+    consumptionType: 0
+    prefab: {fileID: 0}
+    reloadTime: 0
+    limitCount: 0
+  blues:
+    Enable: 0
+    weaponIcon: {fileID: 0}
+    Name: "\u30D6\u30EB\u30FC\u30B9"
+    WeaponColor: {r: 1, g: 0, b: 0, a: 1}
+    Type: 11
+    enableCharacters: 02000000
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 1
+    consumptionType: 0
+    prefab: {fileID: 0}
+    reloadTime: 0
+    limitCount: 0
+  gospel:
+    Enable: 0
+    weaponIcon: {fileID: 0}
+    Name: "\u30B4\u30B9\u30DA\u30EB\u30D6\u30FC\u30B9\u30C8"
+    WeaponColor: {r: 0.69803923, g: 0, b: 1, a: 1}
+    Type: 11
+    enableCharacters: 03000000
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 1
+    consumptionType: 0
+    prefab: {fileID: 0}
+    reloadTime: 0
+    limitCount: 0
+  powerUps:
+  - Enable: 1
+    weaponIcon: {fileID: 21300000, guid: 842a3eabba86650428e03577fc54f929, type: 3}
+    Name: "\u30D5\u30A1\u30A4\u30E4\u30FC\u30B9\u30C8\u30FC\u30E0"
+    WeaponColor: {r: 1, g: 0, b: 0, a: 1}
+    Type: 0
+    enableCharacters: 
+    EnergyRemains:
+    - -1
+    - -1
+    - -1
+    - -1
+    Consumption: 2
+    consumptionType: 0
+    prefab: {fileID: 4307788845655925771, guid: 1bee2c3fe3c812846964395a748fb0d5, type: 3}
+    reloadTime: 1
+    limitCount: 0
+  - Enable: 1
+    weaponIcon: {fileID: 21300000, guid: 67ccb4efd909fd149be33bc02699450d, type: 3}
+    Name: "\u30A2\u30A4\u30B9\u30B9\u30E9\u30C3\u30B7\u30E3\u30FC"
+    WeaponColor: {r: 0, g: 0.8595505, b: 1, a: 1}
+    Type: 1
+    enableCharacters: 
+    EnergyRemains:
+    - -1
+    - -1
+    - -1
+    - -1
+    Consumption: 2
+    consumptionType: 0
+    prefab: {fileID: 3838008989766203695, guid: bb716e6f6fcaf9d40bb7bc98c11556ae, type: 3}
+    reloadTime: 1
+    limitCount: 0
+  - Enable: 1
+    weaponIcon: {fileID: 21300000, guid: b408821e289c9a84698ae6e5a729a67d, type: 3}
+    Name: "\u30B5\u30F3\u30C0\u30FC\u30D3\u30FC\u30E0"
+    WeaponColor: {r: 1, g: 0.9490196, b: 0, a: 1}
+    Type: 2
+    enableCharacters: 
+    EnergyRemains:
+    - -1
+    - -1
+    - -1
+    - -1
+    Consumption: 2
+    consumptionType: 0
+    prefab: {fileID: 4307788845655925771, guid: 0fa80d7f1a7b6fb4d9a6b47e0f8bb4ff, type: 3}
+    reloadTime: 1
+    limitCount: 0
+  - Enable: 1
+    weaponIcon: {fileID: 21300000, guid: a08d9d0f1723c6048b37c65e91c55715, type: 3}
+    Name: "\u30AF\u30A4\u30C3\u30AF\u30D6\u30FC\u30E1\u30E9\u30F3"
+    WeaponColor: {r: 1, g: 0.4392157, b: 1, a: 1}
+    Type: 10
+    enableCharacters: 
+    EnergyRemains:
+    - -1
+    - -1
+    - -1
+    - -1
+    Consumption: 0.25
+    consumptionType: 0
+    prefab: {fileID: 0}
+    reloadTime: 0
+    limitCount: 0
+  - Enable: 1
+    weaponIcon: {fileID: 21300000, guid: 852132781ce302541af062f92316925a, type: 3}
+    Name: "\u30D0\u30D6\u30EB\u30EA\u30FC\u30C9"
+    WeaponColor: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
+    Type: 5
+    enableCharacters: 
+    EnergyRemains:
+    - -1
+    - -1
+    - -1
+    - -1
+    Consumption: 1
+    consumptionType: 0
+    prefab: {fileID: 0}
+    reloadTime: 0
+    limitCount: 0
+  - Enable: 1
+    weaponIcon: {fileID: 21300000, guid: 852132781ce302541af062f92316925a, type: 3}
+    Name: "\u30A8\u30A2\u30FC\u30B7\u30E5\u30FC\u30BF\u30FC"
+    WeaponColor: {r: 0, g: 0.3969531, b: 1, a: 1}
+    Type: 11
+    enableCharacters: 
+    EnergyRemains:
+    - -1
+    - -1
+    - -1
+    - -1
+    Consumption: 1
+    consumptionType: 0
+    prefab: {fileID: 0}
+    reloadTime: 0
+    limitCount: 0
+  - Enable: 1
+    weaponIcon: {fileID: 21300000, guid: 9324672655cb3fe4490be6aa72a9dc9a, type: 3}
+    Name: "\u30D0\u30A6\u30F3\u30B9\u30DC\u30FC\u30EB"
+    WeaponColor: {r: 1, g: 0.4392157, b: 1, a: 1}
+    Type: 12
+    enableCharacters: 
+    EnergyRemains:
+    - -1
+    - -1
+    - -1
+    - -1
+    Consumption: 2
+    consumptionType: 0
+    prefab: {fileID: 0}
+    reloadTime: 0
+    limitCount: 0
+  weapons:
+  - Enable: 1
+    weaponIcon: {fileID: 0}
+    Name: "\u30EF\u30A4\u30C9\u30EC\u30FC\u30B6\u30FC"
+    WeaponColor: {r: 0, g: 1, b: 0.5646708, a: 1}
+    Type: 3
+    enableCharacters: 
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 1
+    consumptionType: 1
+    prefab: {fileID: 3184740788386893137, guid: 1b4d6e14bd323ec4e8f4c45487b58017, type: 3}
+    reloadTime: 0
+    limitCount: 0
+  - Enable: 1
+    weaponIcon: {fileID: 21300000, guid: 022c9c9773c448a43a5f9927e655d843, type: 3}
+    Name: "\u30D6\u30EC\u30FC\u30C9\u30AD\u30E3\u30C3\u30C1\u30E3\u30FC"
+    WeaponColor: {r: 0, g: 0.6226415, b: 0.21422318, a: 1}
+    Type: 4
+    enableCharacters: 
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 1
+    consumptionType: 0
+    prefab: {fileID: 8767434622220690901, guid: f18c7d3da3bde4046b4a12885009422e, type: 3}
+    reloadTime: 1
+    limitCount: 0
+  - Enable: 0
+    weaponIcon: {fileID: 0}
+    Name: "\u30A6\u30A9\u30FC\u30BF\u30FC\u30B8\u30A7\u30C3\u30C8"
+    WeaponColor: {r: 0, g: 0.8106625, b: 1, a: 1}
+    Type: 5
+    enableCharacters: 
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 1
+    consumptionType: 1
+    prefab: {fileID: 0}
+    reloadTime: 0
+    limitCount: 0
+  - Enable: 1
+    weaponIcon: {fileID: 0}
+    Name: "\u30D6\u30EC\u30A4\u30D6\u30B9\u30D4\u30A2"
+    WeaponColor: {r: 0.66253996, g: 0, b: 1, a: 1}
+    Type: 6
+    enableCharacters: 
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 0.5
+    consumptionType: 0
+    prefab: {fileID: 964034756419692630, guid: 2af2fb44b51720b48827b93875ed53ca, type: 3}
+    reloadTime: 0
+    limitCount: 0
+  - Enable: 1
+    weaponIcon: {fileID: 21300000, guid: b53e24725869f2d4aad509ca51422b76, type: 3}
+    Name: "\u30B9\u30D7\u30EC\u30C3\u30C9\u30C0\u30A4\u30CA\u30DE\u30A4\u30C8"
+    WeaponColor: {r: 1, g: 0.5231711, b: 0, a: 1}
+    Type: 7
+    enableCharacters: 
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 2
+    consumptionType: 0
+    prefab: {fileID: 589707998981146735, guid: 2835b6384eb86b5468561a005a06748f, type: 3}
+    reloadTime: 1
+    limitCount: 0
+  - Enable: 1
+    weaponIcon: {fileID: 0}
+    Name: "\u30DC\u30EB\u30C0\u30FC\u30B7\u30FC\u30EB\u30C9"
+    WeaponColor: {r: 0.6886792, g: 0.28574985, b: 0, a: 1}
+    Type: 8
+    enableCharacters: 
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 2
+    consumptionType: 0
+    prefab: {fileID: 3411791175896910842, guid: ba8fe9fbbfa946347ba2d38b4caed9de, type: 3}
+    reloadTime: 0
+    limitCount: 1
+  - Enable: 1
+    weaponIcon: {fileID: 21300000, guid: f9524c0bd711c2c4ab30f4a936545cb9, type: 3}
+    Name: "\u30D5\u30EC\u30A2\u30D0\u30FC\u30B9\u30C8"
+    WeaponColor: {r: 0.8867924, g: 0, b: 0, a: 1}
+    Type: 0
+    enableCharacters: 
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 3
+    consumptionType: 0
+    prefab: {fileID: 8197153375202781044, guid: e167b56d5530f4b4db6198aa2960eead, type: 3}
+    reloadTime: 1
+    limitCount: 0
+  - Enable: 0
+    weaponIcon: {fileID: 0}
+    Name: "\u30D5\u30E9\u30C3\u30B7\u30E5\u30C0\u30C3\u30B7\u30E5 "
+    WeaponColor: {r: 1, g: 0.9118239, b: 0, a: 1}
+    Type: 9
+    enableCharacters: 
+    EnergyRemains:
+    - 28
+    - 28
+    - 28
+    - 28
+    Consumption: 1
+    consumptionType: 0
+    prefab: {fileID: 0}
+    reloadTime: 0
+    limitCount: 0

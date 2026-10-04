@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35efcff26fe08ea4c944f75aa43c6d58, type: 3}
+  m_Name: PlayerShootingPrefabs
+  m_EditorClassIdentifier: 
+  playerData:
+  - icon: {fileID: 21300000, guid: 73e7572b35581914785ac4c039ec1f10, type: 3}
+    color: {r: 0, g: 0.47843137, b: 1, a: 1}
+    name: "\u30E9\u30C3\u30B7\u30E5\u30B9\u30DA\u30FC\u30B9"
+    prefab: {fileID: 7253738437757831171, guid: 804b2aa3b8887b740b5375555d2cbc07, type: 3}
+  - icon: {fileID: 21300000, guid: 926a8b4f5fc1d4f47bcb73be329c2186, type: 3}
+    color: {r: 1, g: 0.14509805, b: 0, a: 1}
+    name: "\u30D3\u30FC\u30C8\u30B9\u30DA\u30FC\u30B9"
+    prefab: {fileID: 0}
+  - icon: {fileID: 21300000, guid: e34d1913b4b280941a03572ef56a64ca, type: 3}
+    color: {r: 1, g: 0, b: 0, a: 1}
+    name: "\u30D6\u30EB\u30FC\u30B9\u30B9\u30DA\u30FC\u30B9"
+    prefab: {fileID: 0}
+  - icon: {fileID: 21300000, guid: e0280cd44d4ffbc438686e82acebe1a2, type: 3}
+    color: {r: 0.69803923, g: 0, b: 1, a: 1}
+    name: "\u30B4\u30B9\u30DA\u30EB\u30D6\u30FC\u30B9\u30C8"
+    prefab: {fileID: 0}

@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: EN-TextData Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: EN-TextData
+  m_TableCollectionNameGuidString: 7ba118fc0da9fcc44b46dd662f38994e
+  m_Entries:
+  - m_Id: 6492631040
+    m_Key: EN-HUD-Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3162274377728
+    m_Key: EN-HUD-Chain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571494283096064
+    m_Key: Results-EN-Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571496392830976
+    m_Key: Results-EN-Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571497915363328
+    m_Key: Results-EN-DamageTaken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571501073674240
+    m_Key: Results-EN-MaxCombo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571501732179968
+    m_Key: Results-EN-Rings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571502327771136
+    m_Key: Results-EN-AverageSpeed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571502847864832
+    m_Key: Results-EN-NoDamage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571503372152832
+    m_Key: Results-EN-NoMiss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571503946772480
+    m_Key: Results-EN-NextRank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571504580112384
+    m_Key: Results-EN-Total
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38091425307144192
+    m_Key: EN-HUD-Miss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38091988501508096
+    m_Key: EN-HUD-GameOver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38092240893751296
+    m_Key: EN-HUD-World
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38092338151272448
+    m_Key: EN-HUD-CourseClear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255432546988032
+    m_Key: Combo-Good
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255463001829376
+    m_Key: Combo-Great
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255476859809792
+    m_Key: Combo-Super
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255491225300992
+    m_Key: Combo-Fantastic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255511890636800
+    m_Key: Combo-Excellent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255530987302912
+    m_Key: Combo-Incredible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255550511788032
+    m_Key: Combo-Wonderful
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47266027656687616
+    m_Key: EN-HUD-TotalScore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51949275989127168
+    m_Key: EN-HUD-1UPProgress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58024076595933184
+    m_Key: EN-HUD-Total
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65021530029666304
+    m_Key: Results-EN-ClearTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68158431607631872
+    m_Key: EN-HUD-Comma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 172886671433117696
+    m_Key: EN-Maze-Ready
+    m_Metadata:
+      m_Items: []
+  - m_Id: 172889357612199936
+    m_Key: EN-Maze-Failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 172890223119413248
+    m_Key: EN-Maze-Clear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173596406079795200
+    m_Key: EN-Maze-FruitTarget
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173596436593356800
+    m_Key: EN-Maze-SpecialItem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174689447771353088
+    m_Key: EN-HUD-Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800421814284288
+    m_Key: Results-EN-ItemCollected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800423655583744
+    m_Key: Results-EN-WeaknessRatio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800425056481280
+    m_Key: Results-EN-MaxChain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800425945673728
+    m_Key: Results-EN-HitRatio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228308556261863424
+    m_Key: EN-HUD-Result
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4193455159743873050
+  references:
+    version: 2
+    RefIds:
+    - rid: 4193455159743873050
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1736651585739

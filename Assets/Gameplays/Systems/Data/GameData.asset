@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1dbf0c9116b0d48932468372589a65, type: 3}
+  m_Name: GameData
+  m_EditorClassIdentifier: 
+  fileNo: 0
+  coins: 25546
+  HUDType: 2
+  character: 3
+  keyItem: 0
+  courseMode: 0
+  openWorldAsDefault: 1
+  partnerSelectEnabled: 0
+  characterIds: 0cffffff
+  characterIdsSub: ffffffff
+  HPs: e8030000e8030000e8030000e8030000
+  lives: 5
+  powerUps: 00000000
+  shields: 00000000
+  badgeList: {fileID: 11400000, guid: 2a6be5304e0f7a840a1d40abf1c35dfb, type: 2}
+  allBadges:
+  - badges: ffffffffffffffffffffffff
+  - badges: ffffffffffffffffffffffff
+  - badges: ffffffffffffffffffffffff
+  - badges: ffffffffffffffffffffffff
+  stockItems:
+  - amounts: 0
+    megaManOnly: 0
+    exceptSonic: 1
+    special: 0
+    limit: 1
+    sprites:
+    - {fileID: 21300000, guid: cc0d31a03e8b72c41bba261499ac4741, type: 3}
+  - amounts: 0
+    megaManOnly: 1
+    exceptSonic: 1
+    special: 0
+    limit: 1
+    sprites:
+    - {fileID: 21300000, guid: cc0d31a03e8b72c41bba261499ac4741, type: 3}
+  - amounts: 0
+    megaManOnly: 0
+    exceptSonic: 1
+    special: 0
+    limit: 5
+    sprites:
+    - {fileID: 21300000, guid: 842a3eabba86650428e03577fc54f929, type: 3}
+    - {fileID: 21300000, guid: 67ccb4efd909fd149be33bc02699450d, type: 3}
+    - {fileID: 21300000, guid: b408821e289c9a84698ae6e5a729a67d, type: 3}
+    - {fileID: 21300000, guid: a08d9d0f1723c6048b37c65e91c55715, type: 3}
+    - {fileID: 21300000, guid: 852132781ce302541af062f92316925a, type: 3}
+    - {fileID: 21300000, guid: 852132781ce302541af062f92316925a, type: 3}
+    - {fileID: 21300000, guid: 9324672655cb3fe4490be6aa72a9dc9a, type: 3}
+  - amounts: 0
+    megaManOnly: 0
+    exceptSonic: 0
+    special: 0
+    limit: 4
+    sprites:
+    - {fileID: 21300000, guid: 30e34b2a9cbaf204e8655a9643707f8b, type: 3}
+    - {fileID: 21300000, guid: c6413e16db3a18e4e88c943a2cee394f, type: 3}
+    - {fileID: 21300000, guid: 0027cc37dea47694f92ebe29df7fc034, type: 3}
+    - {fileID: 21300000, guid: 702cc474acf92254b95315de3e36009a, type: 3}
+    - {fileID: 21300000, guid: 702cc474acf92254b95315de3e36009a, type: 3}
+    - {fileID: 21300000, guid: 9c949418994bb4e4fbefb919e516fe32, type: 3}
+    - {fileID: 21300000, guid: 345f9598b9ae7d847abfe1aa5c96ec8f, type: 3}
+  - amounts: 0
+    megaManOnly: 0
+    exceptSonic: 0
+    special: 1
+    limit: 9
+    sprites:
+    - {fileID: 21300000, guid: f515755f16dfa2d49a0c47f62889688e, type: 3}
+  - amounts: 0
+    megaManOnly: 1
+    exceptSonic: 1
+    special: 1
+    limit: 9
+    sprites:
+    - {fileID: 21300000, guid: b710911821d68d447aaa67c2d32706ab, type: 3}
+  - amounts: 0
+    megaManOnly: 0
+    exceptSonic: 0
+    special: 1
+    limit: 1
+    sprites:
+    - {fileID: 21300000, guid: 9046cc54e02b8674fade9302636e001c, type: 3}
+  greenStars: 000000
+  checkpointScore: 0
+  totalTime: 0
+  checkpointCoins: 0
+  isCpPassed: 0
+  CpPosition: {x: 0, y: 0, z: 0}

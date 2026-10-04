@@ -1,0 +1,181 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: EN-TextData_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 7ba118fc0da9fcc44b46dd662f38994e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6492631040
+    m_Localized: SCORE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3162274377728
+    m_Localized: "CHA\xCENE"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571494283096064
+    m_Localized: Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571496392830976
+    m_Localized: Temps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571497915363328
+    m_Localized: "D\xE9g\xE2ts subis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571501073674240
+    m_Localized: Combo max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571501732179968
+    m_Localized: Anneaux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571502327771136
+    m_Localized: Vitesse moyenne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571502847864832
+    m_Localized: "Aucun d\xE9g\xE2t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571503372152832
+    m_Localized: Parfait
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571503946772480
+    m_Localized: Rang suivant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571504580112384
+    m_Localized: Total
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38091425307144192
+    m_Localized: DOMMAGE!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38091988501508096
+    m_Localized: FIN DE PARTIE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38092240893751296
+    m_Localized: MONDE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38092338151272448
+    m_Localized: "STAGE TERMIN\xC9!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255432546988032
+    m_Localized: Bien
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255463001829376
+    m_Localized: Super
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255476859809792
+    m_Localized: "G\xE9nial"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255491225300992
+    m_Localized: Parfait
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255511890636800
+    m_Localized: Fabuleux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255530987302912
+    m_Localized: Excellent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255550511788032
+    m_Localized: Prodigieux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47266027656687616
+    m_Localized: SCORE TOTAL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58024076595933184
+    m_Localized: TOTAL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65021530029666304
+    m_Localized: Temps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68158431607631872
+    m_Localized: ' '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51949275989127168
+    m_Localized: PROGRESSION 1UP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 172886671433117696
+    m_Localized: "PR\xCAT!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 172889357612199936
+    m_Localized: "LABYRINTHE \xC9CHOU\xC9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 172890223119413248
+    m_Localized: "LABYRINTHE TERMIN\xC9!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173596436593356800
+    m_Localized: "ARTICLE\nSP\xC9CIAL!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173596406079795200
+    m_Localized: 'FRUIT
+
+      BONUS!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174689447771353088
+    m_Localized: PAUSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800421814284288
+    m_Localized: "Article r\xE9cup\xE9r\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800423655583744
+    m_Localized: Taux de faiblesse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800425056481280
+    m_Localized: "Cha\xEEne maximale"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800425945673728
+    m_Localized: "Taux de r\xE9ussite"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228308556261863424
+    m_Localized: "R\xE9sultat"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

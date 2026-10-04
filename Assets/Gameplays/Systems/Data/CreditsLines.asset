@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7dab955601a1443a2f33f812b353f7, type: 3}
+  m_Name: CreditsLines
+  m_EditorClassIdentifier: 
+  items:
+  - header: Director/Design
+    detail: PF2
+  - header: Scenario
+    detail: PF2
+  - header: Programming
+    detail: 'rpgwhitelock
+
+      Avionx
+
+      Meth
+
+      IgniteCoders
+
+      Hello
+      Fangaming
+
+      PF2'
+  - header: Character Graphics
+    detail: 'Nintendo
+
+      Bandai Namco
+
+      Capcom
+
+      Sega/Sonic Team
+
+      PF2'
+  - header: Artworks
+    detail: 'Nintendo
+
+      Bandai Namco
+
+      Capcom
+
+      Sega/Sonic Team
+
+      PF2'
+  - header: Backgrounds
+    detail: 'Nintendo
+
+      Bandai Namco
+
+      Capcom
+
+      Sega/Sonic Team
+
+      rpgwhitelock
+
+      Avionx
+
+      PF2'
+  - header: Sprites
+    detail: 'The Spriters Resource
+
+      Nintendo
+
+      Bandai Namco
+
+      Capcom
+
+      Sega/Sonic
+      Team
+
+      FreeIconsPNG
+
+      ElDuderino
+
+      PF2'
+  - header: Models/Textures
+    detail: 'The Models Resource
+
+      Nintendo
+
+      Bandai Namco
+
+      Capcom
+
+      Sega/Sonic
+      Team
+
+      Hello Fangaming
+
+      DogToon64
+
+      Peardian
+
+      MrEmerald2006
+
+      Marxfan2008Offical
+
+      Crispy
+      Toast
+
+      edsterisawesome
+
+      Freedom Engine
+
+      JaysonJeanChannel
+
+      Bumper
+      Engine
+
+      PF2'
+  - header: Animations
+    detail: 'Nintendo
+
+      Bandai Namco
+
+      Capcom
+
+      Sega/Sonic Team
+
+      Hello
+      Fangaming
+
+      PF2'
+  - header: UI Design
+    detail: PF2
+  - header: Fonts
+    detail: 'Nintendo
+
+      Bandai Namco
+
+      Sega/Sonic Team
+
+      Microsoft
+
+      SummitSoft
+      Corp
+
+      MaxiGamer
+
+      WeAreSTVYT'
+  - header: Musics
+    detail: 'Nintendo
+
+      Bandai Namco
+
+      Capcom
+
+      Sega/Sonic Team
+
+      PF2'
+  - header: Sound Effects
+    detail: 'The Sounds Resource
+
+      Nintendo
+
+      Bandai Namco
+
+      Capcom
+
+      Sega/Sonic
+      Team
+
+      PF2'
+  - header: Voice Actors
+    detail: 'Charles Martinet
+
+      Jun-ichi Kanemaru
+
+      Samantha Kelly
+
+      Kazumi
+      Totaka
+
+      Laura Faye Smith
+
+      Ayaka Fukuhara
+
+      Yoshimi Ninomiya
+
+      Daisuke
+      Kageura
+
+      Keiko Nemoto
+
+      Ryo Hirohashi
+
+      Taeko Kawata
+
+      Nobutoshi
+      Kanna'
+  - header: Testing/Debug
+    detail: PF2
+  - header: Software Used
+    detail: 'Unity 6
+
+      Blender
+
+      Mureka AI
+
+      ElevenLabs'

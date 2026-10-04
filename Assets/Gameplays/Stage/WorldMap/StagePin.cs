@@ -1,0 +1,178 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class StagePin : MonoBehaviour
+{
+    [Header("データ")]
+    public GameData data;
+    public StageInfos stages;
+    [Header("ステージ番号")]
+    public int stageNo;
+
+    public bool placed = false;
+    private int world = 0;
+    private StageInfos.Stage stg;
+    [Header("ステージピン")]
+    public MeshRenderer lightPart;
+    public Material[] materials = new Material[3];
+    [Header("グリーンスター")]
+    public Transform greenStarGroup;
+    public GameObject greenStar;
+    private List<RectTransform> stars;
+    private double step = 0.0;
+    [Header("ランク")]
+    public GameObject rank;
+    public Sprite[] rankSprites = new Sprite[7];
+    // Start is called before the first frame update
+    void Start()
+    {
+        world = 0;
+        stg = stages.worlds[world].stages[stageNo];
+
+        if (stg.stageType == GameType.Boss || stg.stageType == GameType.SonicBoss) {
+            // stg.targetScore = 50000;
+            stg.aRankLine = 40000;
+            stg.sRankLine = 50000;
+        }
+
+        stars = new List<RectTransform>();
+        stars.Add(greenStar.GetComponent<RectTransform>());
+
+        greenStar.SetActive(stg.greenStars.Length > 0);
+        double one = 360.0 / (double)stg.greenStars.Length;
+        for (int i = 1; i < stg.greenStars.Length; i++) {
+            RectTransform st = Instantiate(greenStar, greenStarGroup.position, Quaternion.identity, greenStarGroup).GetComponent<RectTransform>();
+            
+            stars.Add(st);
+            double dir = (Math.PI * one * i) / 180.0;
+            st.localPosition = new Vector3((float)Math.Sin(dir) * 3f, 0f, (float)Math.Cos(dir) * 3f);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        bool unlockedTrigger = stg.unlocked;
+        switch (data.courseMode) {
+            case CourseMode.TimeAttack:
+                unlockedTrigger = unlockedTrigger && stg.stageType != GameType.Shooting;
+                break;
+
+            case CourseMode.RingAttack:
+                unlockedTrigger = unlockedTrigger && !(stg.stageType == GameType.Boss || stg.stageType == GameType.SonicBoss || stg.stageType == GameType.Shooting);
+                break;
+        }
+        if (Input.GetButtonDown("Start") && placed && unlockedTrigger) {
+            if (WorldMapMainUI.step > 0) {
+                WorldMapMainUI.step = 0;
+                StageEnter();
+            } else {
+                WorldMapMainUI.step = stageNo + 1;
+            }
+        }
+
+        if (Input.GetButtonDown("B") && WorldMapMainUI.step > 0) {
+            WorldMapMainUI.step = 0;
+        }
+
+        bool clearedTrigger = stg.cleared;
+        switch (data.courseMode) {
+            case CourseMode.TimeAttack:
+                clearedTrigger = stg.timeCleared;
+                break;
+
+            case CourseMode.RingAttack:
+                clearedTrigger = stg.ringCleared;
+                break;
+        }
+
+        Material[] mat = new Material[1];
+        mat[0] = materials[0];
+        if (clearedTrigger) {
+            mat[0] = materials[2];
+        } else if (unlockedTrigger) {
+            mat[0] = materials[1];
+        }
+        lightPart.materials = mat;
+
+        greenStarGroup.gameObject.SetActive(data.courseMode == CourseMode.ScoreAttack || data.courseMode == CourseMode.NoScoreAndRankS);
+
+        switch (data.courseMode) {
+            case CourseMode.TimeAttack:
+                rank.GetComponent<SpriteRenderer>().sprite = rankSprites[stg.timeBestRank];
+                rank.SetActive(stg.timeCleared);
+                break;
+
+            case CourseMode.RingAttack:
+                rank.GetComponent<SpriteRenderer>().sprite = rankSprites[stg.ringBestRank];
+                rank.SetActive(stg.ringCleared);
+                break;
+            
+            default:
+                rank.GetComponent<SpriteRenderer>().sprite = rankSprites[stg.bestRank];
+                rank.SetActive(stg.cleared);
+                break;
+        }
+    }
+
+    void FixedUpdate() {
+        if (stg.greenStars.Length <= 0) {
+            return;
+        }
+        step -= 1.0;
+        if (step <= 0.0) {
+            step += 360.0;
+        }
+        //step %= 360.0;
+        for (int i = 0; i < stars.Count; i++) {
+            if (stars[i] != null) {
+                double one = 360.0 / (double)stg.greenStars.Length;
+                double dir = (Math.PI * ((one * i) + step)) / 180.0;
+                stars[i].localPosition = new Vector3((float)Math.Sin(dir) * 3f, 0f, (float)Math.Cos(dir) * 3f);
+                stars[i].Rotate(0f, -3f, 0f, Space.Self);
+            }
+        }
+    }
+
+    void OnCollisionStay(Collision col) {
+        if (col.gameObject.tag == "Player" && !placed) {
+            placed = true;
+        }
+    }
+    void OnCollisionExit(Collision col) {
+        if (col.gameObject.tag == "Player" && placed) {
+            placed = false;
+        }
+    }
+
+    void StageEnter() {
+        data.stageInfo["worldNo"] = world.ToString();
+        data.stageInfo["stageNo"] = stageNo.ToString();
+        // data.stageInfo["targetScore"] = stg.targetScore.ToString();
+        data.stageInfo["aRankLine"] = stg.aRankLine.ToString();
+        data.stageInfo["sRankLine"] = stg.sRankLine.ToString();
+        data.stageInfo["targetTime"] = stg.targetTime.ToString();
+        data.stageInfo["subtitle"] = stg.subtitle;
+
+        data.HUDType = stg.stageType;
+
+        if (stg.stageType == GameType.Sonic || stg.stageType == GameType.SonicBoss || data.courseMode == CourseMode.RingAttack) {
+            data.character = Character.Sonic;
+        } else {
+            data.character = Character.Mario;
+        }
+
+        data.openWorldAsDefault = stg.openWorldAsDefault;
+
+        if (!stg.greenStarsFromScratch) {
+            data.greenStars = stg.greenStars;
+        } else {
+            data.greenStars = new bool[stg.greenStars.Length];
+        }
+
+        SceneManager.LoadScene("ZoneScreen");
+    }
+}

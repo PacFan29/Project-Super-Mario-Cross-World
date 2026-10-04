@@ -1,0 +1,166 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <authoring_tool>SonicGLvl - COLLADA Exporter</authoring_tool>
+        </contributor>
+        <unit name="meters" meter="1.0" />
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_images>
+        <image id="cmn_metal_ms_pulleystand_dif-image" name="cmn_metal_ms_pulleystand_dif-image">
+            <init_from>./textures/cmn_metal_ms_pulleystand_dif.png</init_from>
+        </image>
+        <image id="cmn_metal_ms_pulleystand_pow-image" name="cmn_metal_ms_pulleystand_pow-image">
+            <init_from>./textures/cmn_metal_ms_pulleystand_pow.png</init_from>
+        </image>
+    </library_images>
+    <library_materials>
+        <material id="cmn_obj_pole_stand01ID" name="cmn_obj_pole_stand01">
+            <instance_effect url="#cmn_obj_pole_stand01-effect" />
+        </material>
+    </library_materials>
+    <library_effects>
+        <effect id="cmn_obj_pole_stand01-effect" name="cmn_obj_pole_stand01-effect">
+            <profile_COMMON>
+                <newparam sid="cmn_metal_ms_pulleystand_dif-image-surface">
+                    <surface type="2D">
+                        <init_from>cmn_metal_ms_pulleystand_dif-image</init_from>
+                    </surface>
+                </newparam>
+                <newparam sid="cmn_metal_ms_pulleystand_dif-image-sampler">
+                    <sampler2D>
+                        <source>cmn_metal_ms_pulleystand_dif-image-surface</source>
+                    </sampler2D>
+                </newparam>
+                <newparam sid="cmn_metal_ms_pulleystand_pow-image-surface">
+                    <surface type="2D">
+                        <init_from>cmn_metal_ms_pulleystand_pow-image</init_from>
+                    </surface>
+                </newparam>
+                <newparam sid="cmn_metal_ms_pulleystand_pow-image-sampler">
+                    <sampler2D>
+                        <source>cmn_metal_ms_pulleystand_pow-image-surface</source>
+                    </sampler2D>
+                </newparam>
+                <technique sid="COMMON">
+                    <phong>
+                        <diffuse>
+                            <texture texture="cmn_metal_ms_pulleystand_dif-image-sampler" texcoord="UVSET0" />
+                            <color>1.000000 1.000000 1.000000 1</color>
+                        </diffuse>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+    </library_effects>
+    <library_geometries>
+        <geometry id="cmn_obj_pole_svC-geometry" name="cmn_obj_pole_svC-geometry">
+            <mesh>
+                <source id="cmn_obj_pole_svC-geometry-position">
+                    <float_array id="cmn_obj_pole_svC-geometry-position-array" count="96">0.108467 1 -1.31854 -0.112662 -1 -1.31854 -0.112662 1 -1.31854 0.108467 -1 -1.31854 -0.141396 1 -1.33673 -0.141396 -1 -1.54196 -0.141397 1 -1.54196 -0.141396 -1 -1.33673 -0.112662 1 -1.56015 0.108467 -1 -1.56015 0.108467 1 -1.56015 -0.112662 -1 -1.56015 0.137201 1 -1.54196 0.137202 -1 -1.33673 0.137202 1 -1.33673 0.137202 -1 -1.54196 0.137202 1 -1.33673 0.108467 -1 -1.31854 0.108467 1 -1.31854 0.137202 -1 -1.33673 -0.112662 1 -1.31854 -0.141396 -1 -1.33673 -0.141396 1 -1.33673 -0.112662 -1 -1.31854 -0.141397 1 -1.54196 -0.112662 -1 -1.56015 -0.112662 1 -1.56015 -0.141396 -1 -1.54196 0.108467 1 -1.56015 0.137202 -1 -1.54196 0.137201 1 -1.54196 0.108467 -1 -1.56015 </float_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_svC-geometry-position-array" count="32" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="cmn_obj_pole_svC-geometry-normal">
+                    <float_array id="cmn_obj_pole_svC-geometry-normal-array" count="24">0 0 1 -1 0 0 0 0 -1 1 0 0 0.534921 0 0.844902 -0.534923 0 0.844901 -0.534933 0 -0.844894 0.534929 0 -0.844897 </float_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_svC-geometry-normal-array" count="8" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="cmn_obj_pole_svC-geometry-uv">
+                    <float_array id="cmn_obj_pole_svC-geometry-uv-array" count="40">-0.21116 1.92628 -0.253949 1.07461 -0.253949 1.92628 -0.21116 1.07461 0.783995 1.92418 0.753914 1.08461 0.753914 1.92418 0.783995 1.08461 -0.211276 1.92628 -0.254065 1.07461 -0.254065 1.92628 -0.211276 1.07461 -0.218421 1.92628 -0.218421 1.07461 -0.248554 1.07461 -0.248554 1.92628 -0.218537 1.92628 -0.218537 1.07461 -0.24867 1.07461 -0.24867 1.92628 </float_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_svC-geometry-uv-array" count="20" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="cmn_obj_pole_svC-geometry-vertex">
+                    <input semantic="POSITION" source="#cmn_obj_pole_svC-geometry-position" />
+                </vertices>
+                <triangles material="cmn_obj_pole_stand01" count="16">
+                    <input semantic="VERTEX" source="#cmn_obj_pole_svC-geometry-vertex" offset="0" />
+                    <input semantic="NORMAL" source="#cmn_obj_pole_svC-geometry-normal" offset="1" />
+                    <input semantic="TEXCOORD" source="#cmn_obj_pole_svC-geometry-uv" offset="2" set="0" />
+                    <p>1 0 1 0 0 0 2 0 2 0 0 0 1 0 1 3 0 3 5 1 5 4 1 4 6 1 6 4 1 4 5 1 5 7 1 7 9 2 9 8 2 8 10 2 10 8 2 8 9 2 9 11 2 11 13 3 5 12 3 4 14 3 6 12 3 4 13 3 5 15 3 7 17 4 3 16 4 12 18 4 0 16 4 12 17 4 3 19 4 13 21 5 14 20 5 2 22 5 15 20 5 2 21 5 14 23 5 1 25 6 11 24 6 16 26 6 8 24 6 16 25 6 11 27 6 17 29 7 18 28 7 10 30 7 19 28 7 10 29 7 18 31 7 9 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_controllers>
+        <controller id="cmn_obj_pole_svC-controller">
+            <skin source="#cmn_obj_pole_svC-geometry">
+                <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+                <source id="cmn_obj_pole_svC-controller-Joints">
+                    <Name_array id="cmn_obj_pole_svC-controller-Joints-array" count="1">cmn_obj_pole_svC </Name_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_svC-controller-Joints-array" count="1">
+                            <param type="name" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="cmn_obj_pole_svC-controller-Matrices">
+                    <float_array id="cmn_obj_pole_svC-controller-Matrices-array" count="16">1 -0 0 -0 -0 1 -0 0 0 -0 1 -0 -0 0 -0 1 </float_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_svC-controller-Matrices-array" count="1" stride="16">
+                            <param type="float4x4" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="cmn_obj_pole_svC-controller-Weights">
+                    <float_array id="cmn_obj_pole_svC-controller-Weights-array" count="1">1 </float_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_svC-controller-Weights-array" count="1">
+                            <param type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <joints>
+                    <input semantic="JOINT" source="#cmn_obj_pole_svC-controller-Joints" />
+                    <input semantic="INV_BIND_MATRIX" source="#cmn_obj_pole_svC-controller-Matrices" />
+                </joints>
+                <vertex_weights count="32">
+                    <input semantic="JOINT" offset="0" source="#cmn_obj_pole_svC-controller-Joints" />
+                    <input semantic="WEIGHT" offset="1" source="#cmn_obj_pole_svC-controller-Weights" />
+                    <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+                    <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+                </vertex_weights>
+            </skin>
+        </controller>
+    </library_controllers>
+    <library_visual_scenes>
+        <visual_scene id="SonicGLvlScene" name="SonicGLvlScene">
+            <node id="cmn_obj_pole_svC" sid="cmn_obj_pole_svC" name="cmn_obj_pole_svC">
+                <instance_controller url="#cmn_obj_pole_svC-controller">
+                    <bind_material>
+                        <technique_common>
+                            <instance_material symbol="cmn_obj_pole_stand01" target="#cmn_obj_pole_stand01ID" />
+                        </technique_common>
+                    </bind_material>
+                </instance_controller>
+            </node>
+            <node id="cmn_obj_pole_svC" sid="cmn_obj_pole_svC" name="cmn_obj_pole_svC" type="JOINT">
+                <matrix>1 0 0 -0 0 1 0 -0 0 0 1 -0 0 0 0 1 </matrix>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+            </node>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#SonicGLvlScene" />
+    </scene>
+</COLLADA>

@@ -1,0 +1,35 @@
+# Blender MTL File: 'Stomp Switch.blend'
+# Material Count: 3
+
+newmtl cmn_obj_km_switch01
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd cnm_metal_km_reactionpanel_dif.png
+
+newmtl cmn_obj_km_switch02
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd cmn_glass_km_switchnormal_dif.png
+
+newmtl cmn_obj_km_switch03
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd cmn_metal_km_switchlamp01_dif.png

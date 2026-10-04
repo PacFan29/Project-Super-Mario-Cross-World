@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <authoring_tool>SonicGLvl - COLLADA Exporter</authoring_tool>
+        </contributor>
+        <unit name="meters" meter="1.0" />
+        <up_axis>Y_UP</up_axis>
+    </asset>
+    <library_images>
+        <image id="cmn_obj_pole01_dif-image" name="cmn_obj_pole01_dif-image">
+            <init_from>./textures/cmn_obj_pole01_dif.png</init_from>
+        </image>
+        <image id="cmn_obj_pole01_spc-image" name="cmn_obj_pole01_spc-image">
+            <init_from>./textures/cmn_obj_pole01_spc.png</init_from>
+        </image>
+        <image id="cmn_obj_pole01_nrm-image" name="cmn_obj_pole01_nrm-image">
+            <init_from>./textures/cmn_obj_pole01_nrm.png</init_from>
+        </image>
+        <image id="cmn_obj_pole01_ems-image" name="cmn_obj_pole01_ems-image">
+            <init_from>./textures/cmn_obj_pole01_ems.png</init_from>
+        </image>
+    </library_images>
+    <library_materials>
+        <material id="cmn_obj_pole_metalID" name="cmn_obj_pole_metal">
+            <instance_effect url="#cmn_obj_pole_metal-effect" />
+        </material>
+    </library_materials>
+    <library_effects>
+        <effect id="cmn_obj_pole_metal-effect" name="cmn_obj_pole_metal-effect">
+            <profile_COMMON>
+                <newparam sid="cmn_obj_pole01_dif-image-surface">
+                    <surface type="2D">
+                        <init_from>cmn_obj_pole01_dif-image</init_from>
+                    </surface>
+                </newparam>
+                <newparam sid="cmn_obj_pole01_dif-image-sampler">
+                    <sampler2D>
+                        <source>cmn_obj_pole01_dif-image-surface</source>
+                    </sampler2D>
+                </newparam>
+                <newparam sid="cmn_obj_pole01_spc-image-surface">
+                    <surface type="2D">
+                        <init_from>cmn_obj_pole01_spc-image</init_from>
+                    </surface>
+                </newparam>
+                <newparam sid="cmn_obj_pole01_spc-image-sampler">
+                    <sampler2D>
+                        <source>cmn_obj_pole01_spc-image-surface</source>
+                    </sampler2D>
+                </newparam>
+                <newparam sid="cmn_obj_pole01_nrm-image-surface">
+                    <surface type="2D">
+                        <init_from>cmn_obj_pole01_nrm-image</init_from>
+                    </surface>
+                </newparam>
+                <newparam sid="cmn_obj_pole01_nrm-image-sampler">
+                    <sampler2D>
+                        <source>cmn_obj_pole01_nrm-image-surface</source>
+                    </sampler2D>
+                </newparam>
+                <newparam sid="cmn_obj_pole01_ems-image-surface">
+                    <surface type="2D">
+                        <init_from>cmn_obj_pole01_ems-image</init_from>
+                    </surface>
+                </newparam>
+                <newparam sid="cmn_obj_pole01_ems-image-sampler">
+                    <sampler2D>
+                        <source>cmn_obj_pole01_ems-image-surface</source>
+                    </sampler2D>
+                </newparam>
+                <technique sid="COMMON">
+                    <phong>
+                        <diffuse>
+                            <texture texture="cmn_obj_pole01_dif-image-sampler" texcoord="UVSET0" />
+                            <color>1.000000 1.000000 1.000000 1</color>
+                        </diffuse>
+                    </phong>
+                </technique>
+            </profile_COMMON>
+        </effect>
+    </library_effects>
+    <library_geometries>
+        <geometry id="cmn_obj_pole_fvB-geometry" name="cmn_obj_pole_fvB-geometry">
+            <mesh>
+                <source id="cmn_obj_pole_fvB-geometry-position">
+                    <float_array id="cmn_obj_pole_fvB-geometry-position-array" count="54">0.0499691 0 0 0.0353335 0.0353335 0.999643 0.0353335 0.0353335 0 0.0499691 0 0.999643 0 0.0499691 0.999643 0 0.0499691 0 -0.0353335 0.0353335 0.999643 -0.0353335 0.0353335 0 -0.0499691 0 0.999643 -0.0499691 0 0 -0.0353335 -0.0353336 0.999643 -0.0353335 -0.0353335 0 0 -0.0499692 0.999643 0 -0.0499691 0 0 -0.0499691 0 0.0353335 -0.0353336 0.999643 0.0353335 -0.0353335 0 0 -0.0499692 0.999643 </float_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_fvB-geometry-position-array" count="18" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="cmn_obj_pole_fvB-geometry-normal">
+                    <float_array id="cmn_obj_pole_fvB-geometry-normal-array" count="30">1 0 0 0.707107 0.707106 0 0.707107 0.707107 0 0 1 0 -0.707107 0.707107 0 -1 0 0 -0.707107 -0.707107 0 0 -1 0 0.707107 -0.707106 0 0.707107 -0.707107 0 </float_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_fvB-geometry-normal-array" count="10" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="cmn_obj_pole_fvB-geometry-uv">
+                    <float_array id="cmn_obj_pole_fvB-geometry-uv-array" count="36">0.000261 -0.587406 0.999612 -0.629896 0.000262 -0.629896 0.999611 -0.587406 0.999612 -0.672386 0.000262 -0.672386 0.999612 -0.714876 0.000262 -0.714876 0.999612 -0.757366 0.000262 -0.757366 0.999612 -0.799856 0.000262 -0.799856 0.999612 -0.842346 0.000262 -0.842346 0.000261 -0.502426 0.999611 -0.544916 0.000261 -0.544916 0.999611 -0.502426 </float_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_fvB-geometry-uv-array" count="18" stride="2">
+                            <param name="S" type="float" />
+                            <param name="T" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="cmn_obj_pole_fvB-geometry-vertex">
+                    <input semantic="POSITION" source="#cmn_obj_pole_fvB-geometry-position" />
+                </vertices>
+                <triangles material="cmn_obj_pole_metal" count="17">
+                    <input semantic="VERTEX" source="#cmn_obj_pole_fvB-geometry-vertex" offset="0" />
+                    <input semantic="NORMAL" source="#cmn_obj_pole_fvB-geometry-normal" offset="1" />
+                    <input semantic="TEXCOORD" source="#cmn_obj_pole_fvB-geometry-uv" offset="2" set="0" />
+                    <p>12 7 12 11 6 11 13 7 13 11 6 11 12 7 12 11 6 11 10 6 10 11 6 11 12 7 12 11 6 11 10 6 10 9 5 9 8 5 8 9 5 9 10 6 10 9 5 9 8 5 8 7 4 7 6 4 6 7 4 7 8 5 8 7 4 7 6 4 6 5 3 5 4 3 4 5 3 5 6 4 6 5 3 5 4 3 4 2 2 2 1 1 1 2 2 2 4 3 4 2 2 2 1 1 1 0 0 0 3 0 3 0 0 0 1 1 1 0 0 0 3 0 3 16 9 16 15 8 15 16 9 16 3 0 3 16 9 16 15 8 15 14 7 14 17 7 17 14 7 14 15 8 15 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_controllers>
+        <controller id="cmn_obj_pole_fvB-controller">
+            <skin source="#cmn_obj_pole_fvB-geometry">
+                <bind_shape_matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</bind_shape_matrix>
+                <source id="cmn_obj_pole_fvB-controller-Joints">
+                    <Name_array id="cmn_obj_pole_fvB-controller-Joints-array" count="1">cmn_obj_pole_fvB </Name_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_fvB-controller-Joints-array" count="1">
+                            <param type="name" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="cmn_obj_pole_fvB-controller-Matrices">
+                    <float_array id="cmn_obj_pole_fvB-controller-Matrices-array" count="16">1 -0 0 -0 -0 1 -0 0 0 -0 1 -0 -0 0 -0 1 </float_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_fvB-controller-Matrices-array" count="1" stride="16">
+                            <param type="float4x4" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <source id="cmn_obj_pole_fvB-controller-Weights">
+                    <float_array id="cmn_obj_pole_fvB-controller-Weights-array" count="1">1 </float_array>
+                    <technique_common>
+                        <accessor source="#cmn_obj_pole_fvB-controller-Weights-array" count="1">
+                            <param type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <joints>
+                    <input semantic="JOINT" source="#cmn_obj_pole_fvB-controller-Joints" />
+                    <input semantic="INV_BIND_MATRIX" source="#cmn_obj_pole_fvB-controller-Matrices" />
+                </joints>
+                <vertex_weights count="18">
+                    <input semantic="JOINT" offset="0" source="#cmn_obj_pole_fvB-controller-Joints" />
+                    <input semantic="WEIGHT" offset="1" source="#cmn_obj_pole_fvB-controller-Weights" />
+                    <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </vcount>
+                    <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </v>
+                </vertex_weights>
+            </skin>
+        </controller>
+    </library_controllers>
+    <library_visual_scenes>
+        <visual_scene id="SonicGLvlScene" name="SonicGLvlScene">
+            <node id="cmn_obj_pole_fvB" sid="cmn_obj_pole_fvB" name="cmn_obj_pole_fvB">
+                <instance_controller url="#cmn_obj_pole_fvB-controller">
+                    <bind_material>
+                        <technique_common>
+                            <instance_material symbol="cmn_obj_pole_metal" target="#cmn_obj_pole_metalID" />
+                        </technique_common>
+                    </bind_material>
+                </instance_controller>
+            </node>
+            <node id="cmn_obj_pole_fvB" sid="cmn_obj_pole_fvB" name="cmn_obj_pole_fvB" type="JOINT">
+                <matrix>1 0 0 -0 0 1 0 -0 0 0 1 -0 0 0 0 1 </matrix>
+                <extra>
+                    <technique profile="FCOLLADA">
+                        <visibility>1.000000</visibility>
+                    </technique>
+                </extra>
+            </node>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#SonicGLvlScene" />
+    </scene>
+</COLLADA>

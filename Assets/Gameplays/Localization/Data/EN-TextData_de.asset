@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: EN-TextData_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 7ba118fc0da9fcc44b46dd662f38994e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6492631040
+    m_Localized: PUNKTZAHL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3162274377728
+    m_Localized: KETTE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571494283096064
+    m_Localized: Punktzahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571496392830976
+    m_Localized: Zeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571497915363328
+    m_Localized: Erlittener Schaden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571501073674240
+    m_Localized: Maximale Combo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571501732179968
+    m_Localized: Ringe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571502327771136
+    m_Localized: Durchschnittsgeschwindigkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571502847864832
+    m_Localized: Kein Schaden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571503372152832
+    m_Localized: Perfekt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571503946772480
+    m_Localized: "N\xE4chster Rang"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27571504580112384
+    m_Localized: Gesamt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38091425307144192
+    m_Localized: SCHADE!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38091988501508096
+    m_Localized: GAME OVER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38092240893751296
+    m_Localized: WELT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38092338151272448
+    m_Localized: LEVEL BEENDET!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255432546988032
+    m_Localized: Gut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255463001829376
+    m_Localized: Prima
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255476859809792
+    m_Localized: Toll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255491225300992
+    m_Localized: Ausgezeichnet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255511890636800
+    m_Localized: Fantastisch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255530987302912
+    m_Localized: Exzellent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47255550511788032
+    m_Localized: Wunderbar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47266027656687616
+    m_Localized: GESAMTPUNKTZAHL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58024076595933184
+    m_Localized: GESAMT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65021530029666304
+    m_Localized: Zeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68158431607631872
+    m_Localized: .
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51949275989127168
+    m_Localized: 1UP-FORTSCHRITT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 172886671433117696
+    m_Localized: BEREIT!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 172889357612199936
+    m_Localized: LABYRINTH GESCHEITERT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 172890223119413248
+    m_Localized: LABYRINTH BEENDET!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173596436593356800
+    m_Localized: SPEZIALARTIKEL!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173596406079795200
+    m_Localized: OBST!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174689447771353088
+    m_Localized: PAUSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800421814284288
+    m_Localized: Artikel abgeholt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800423655583744
+    m_Localized: "Schw\xE4chenverh\xE4ltnis"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800425056481280
+    m_Localized: Maximale Kette
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217800425945673728
+    m_Localized: Trefferquote
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228308556261863424
+    m_Localized: Ergebnis
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

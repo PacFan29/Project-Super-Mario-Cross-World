@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7211005122304917319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7357999899113884585}
+  - component: {fileID: 8466517568516914865}
+  m_Layer: 0
+  m_Name: "\u30B3\u30A4\u30F3\u30B9\u30DD\u30CA\u30FC"
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7357999899113884585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7211005122304917319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.808561, y: 10.620977, z: -21.785358}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8466517568516914865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7211005122304917319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226e77503061fd04a93af5279edd0f8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsAmount: 0
+  player: {fileID: 0}
+  coinObj: {fileID: 1455162535617050316, guid: 6387df6d5ea960941812dbd1c41a970c, type: 3}
+  coin10Obj: {fileID: 5804609786178874148, guid: a7390e8849b42cf4fa443489249a1104, type: 3}
+  coin30Obj: {fileID: 5804609786178874148, guid: 91c36eaee4fddc04cba51b084bb2f63b, type: 3}
+  coin50Obj: {fileID: 5804609786178874148, guid: 50a7e44ddd67cc742a8bcf6ba5e4478e, type: 3}
+  ringPopUp: {fileID: 7838715647724906143, guid: 8f4ab1c7dbc5d7d4f9282fa44ba14083, type: 3}

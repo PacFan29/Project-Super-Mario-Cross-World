@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fbd657ae0c01cf94fbf732e493b326e2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameData: {fileID: 11400000, guid: fc3ea490e0308a54f90012d9282e46d3, type: 2}
+  - options: {fileID: 11400000, guid: d9d9c64414f5e944f9fd4a43f1ba4868, type: 2}
+  - stageInfos: {fileID: 11400000, guid: 07a93f0b2130cd04a9e85a4707b73598, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

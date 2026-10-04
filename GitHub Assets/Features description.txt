@@ -1,0 +1,34 @@
+1. Playable characters (Normal course)
+Mario
+Luigi
+Princess Peach
+Yoshi
+Rosalina
+Pac-Man
+Ms. Pac-Man
+Pac Jr.
+Mega Man
+Roll (Mega Man 11 outfit)
+Proto Man
+Bass
+Classic Sonic
+Modern Tails
+Modern Amy
+Modern Knuckles
+
+2. Playable characters (Sonic course)
+Modern Sonic
+Shadow
+
+3. Course description
+Normal course : Playable character is mainly Mario, you can enjoy the generic 3D platformer. Also, you can change the character to solve the gimmicks. And also have a multi-player mode, you can swap the player like Encore Mode from Sonic Mania Plus. Once the gauge fills up, you can unleash a special move that earns a high score.
+Sonic course : Playable character is mainly Modern Sonic, you can enjoy high-speed action.
+
+4. Course Mode
+Score Attack : A standard course mode. The higher the score you earn, the more the rank rises. (Lowest rank : F, Highest rank : S)
+No Score and Rank : A setting unlocked after clearing "Score Attack". You can clear the course at your leisure without worrying about your score or rank.
+Time Attack : One of the elements for deep engagement. The faster you clear the game, the higher the rank will be. Also, by collecting stopwatches (from "Pac-Man World 2 Re-Pac"), you can improve your completion time after clearing the game.
+Ring Attack : One of the elements for deep engagement. The more rings you collect, the higher the rank becomes. However, you lose a certain number of rings when you take damage (Just like in the Sonic series).
+
+5. Stage gimmicks and hazards
+To view them, please try the "Test course".

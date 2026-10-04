@@ -1,0 +1,47 @@
+# Blender 4.0.1 MTL File: 'None'
+# www.blender.org
+
+newmtl A_SOLID__ol
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+Pr 1.000000
+Pm 1.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd it101_ol_BM.png
+
+newmtl A_S_ALPHA__head
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 6
+Pr 1.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd it101_head_BM.png
+map_Pm it101_head_MM.png
+map_d it101_head_BM.png
+
+newmtl A_S_SOLID__2
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+Pr 1.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd it101_scre_BM.png
+map_Pm it101_scre_MM.png

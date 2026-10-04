@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58cc967b9abde7e41bbd8a2d8fb5bcbf, type: 3}
+  m_Name: StageInfos
+  m_EditorClassIdentifier: 
+  worlds:
+  - stages:
+    - aRankLine: 80000
+      sRankLine: 100000
+      targetTime: 600
+      maxTimeBonus: 30000
+      maxDamageCount: 10
+      timeAttackTargetTime: 60
+      ringsARankLine: 200
+      ringsSRankLine: 250
+      stageType: 0
+      openWorldAsDefault: 1
+      greenStarsFromScratch: 0
+      subtitle: "\u30AA\u30FC\u30D7\u30F3\u30EF\u30FC\u30EB\u30C9"
+      cleared: 1
+      timeCleared: 1
+      ringCleared: 1
+      unlocked: 1
+      highScore: 118146
+      bestTime: 120081
+      timeAttackBestTime: 20623
+      bestCoins: 705
+      ringAttackBestRings: 1360
+      greenStars: 010101
+      bestRank: 6
+      timeBestRank: 6
+      ringBestRank: 6
+    - aRankLine: 90000
+      sRankLine: 120000
+      targetTime: 480
+      maxTimeBonus: 20000
+      maxDamageCount: 10
+      timeAttackTargetTime: 45
+      ringsARankLine: 300
+      ringsSRankLine: 350
+      stageType: 0
+      openWorldAsDefault: 0
+      greenStarsFromScratch: 0
+      subtitle: "\u521D\u4EE3\u30B9\u30FC\u30D1\u30FC\u30DE\u30EA\u30AA\u30D6\u30E9\u30B6\u30FC\u30BA\u3088\u308A"
+      cleared: 1
+      timeCleared: 1
+      ringCleared: 1
+      unlocked: 1
+      highScore: 109762
+      bestTime: 34401
+      timeAttackBestTime: 13879
+      bestCoins: 300
+      ringAttackBestRings: 408
+      greenStars: 
+      bestRank: 5
+      timeBestRank: 6
+      ringBestRank: 6
+    - aRankLine: 100000
+      sRankLine: 150000
+      targetTime: 360
+      maxTimeBonus: 60000
+      maxDamageCount: 10
+      timeAttackTargetTime: 30
+      ringsARankLine: 1000
+      ringsSRankLine: 1200
+      stageType: 2
+      openWorldAsDefault: 1
+      greenStarsFromScratch: 0
+      subtitle: "\u30BD\u30CB\u30C3\u30AF\u30B9\u30C6\u30FC\u30B8"
+      cleared: 1
+      timeCleared: 1
+      ringCleared: 1
+      unlocked: 1
+      highScore: 159227
+      bestTime: 59940
+      timeAttackBestTime: 28721
+      bestCoins: 673
+      ringAttackBestRings: 1197
+      greenStars: 010101
+      bestRank: 6
+      timeBestRank: 6
+      ringBestRank: 5
+    - aRankLine: 40000
+      sRankLine: 50000
+      targetTime: 90
+      maxTimeBonus: 50000
+      maxDamageCount: 10
+      timeAttackTargetTime: 90
+      ringsARankLine: 200
+      ringsSRankLine: 250
+      stageType: 1
+      openWorldAsDefault: 0
+      greenStarsFromScratch: 0
+      subtitle: "\u30DC\u30B9\u30B9\u30C6\u30FC\u30B8"
+      cleared: 1
+      timeCleared: 1
+      ringCleared: 0
+      unlocked: 1
+      highScore: 59543
+      bestTime: 54734
+      timeAttackBestTime: 56525
+      bestCoins: 1000
+      ringAttackBestRings: 0
+      greenStars: 
+      bestRank: 6
+      timeBestRank: 6
+      ringBestRank: 0
+    - aRankLine: 500000
+      sRankLine: 1000000
+      targetTime: 1200
+      maxTimeBonus: 150000
+      maxDamageCount: 25
+      timeAttackTargetTime: 30
+      ringsARankLine: 5000
+      ringsSRankLine: 5600
+      stageType: 0
+      openWorldAsDefault: 0
+      greenStarsFromScratch: 0
+      subtitle: "\u30C6\u30B9\u30C8\u30B9\u30C6\u30FC\u30B8"
+      cleared: 1
+      timeCleared: 1
+      ringCleared: 1
+      unlocked: 1
+      highScore: 1026795
+      bestTime: 465356
+      timeAttackBestTime: 10752
+      bestCoins: 2348
+      ringAttackBestRings: 5866
+      greenStars: 01010101010101
+      bestRank: 6
+      timeBestRank: 6
+      ringBestRank: 6
+    - aRankLine: 40000
+      sRankLine: 50000
+      targetTime: 120
+      maxTimeBonus: 50000
+      maxDamageCount: 10
+      timeAttackTargetTime: 120
+      ringsARankLine: 200
+      ringsSRankLine: 250
+      stageType: 1
+      openWorldAsDefault: 0
+      greenStarsFromScratch: 0
+      subtitle: Wega's challenge
+      cleared: 0
+      timeCleared: 0
+      ringCleared: 0
+      unlocked: 1
+      highScore: 0
+      bestTime: 5999999
+      timeAttackBestTime: 5999999
+      bestCoins: 0
+      ringAttackBestRings: 0
+      greenStars: 
+      bestRank: 0
+      timeBestRank: 0
+      ringBestRank: 0

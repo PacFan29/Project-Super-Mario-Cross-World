@@ -1,0 +1,13 @@
+# Blender 4.0.1 MTL File: 'None'
+# www.blender.org
+
+newmtl A_S_SOLID_CHAR__1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd em005_break_BM_NOMIP.png
+map_refl em005_break_MM_NOMIP.png

@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f39ce12c61fb7449bf92e1b29891d9, type: 3}
+  m_Name: PlayerPrefabs
+  m_EditorClassIdentifier: 
+  playerData:
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: 7bec77e2b5ba0814fa444012cecb0560, type: 3}
+    artwork: {fileID: 21300000, guid: 4c80273f02b40344e8e680832022fec1, type: 3}
+    artworkScale: 1
+    color: {r: 1, g: 0, b: 0, a: 1}
+    name: "\u30DE\u30EA\u30AA"
+    prefab: {fileID: 3745351628402160052, guid: 10bdac14a5f950c4e8e644c25f87fccf, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: 2cf6645962db03c4f9c903cba32a84db, type: 3}
+    artwork: {fileID: 21300000, guid: 0e6a0d0580807304ea084d20c7ea30e2, type: 3}
+    artworkScale: 1
+    color: {r: 0, g: 0.8509804, b: 0.2509804, a: 1}
+    name: "\u30EB\u30A4\u30FC\u30B8"
+    prefab: {fileID: 4328866090020693109, guid: 632fc4ccac98600489e55f7423114881, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: 482350d8a1882b0438ef15651333fdf8, type: 3}
+    artwork: {fileID: 21300000, guid: 6b162fc42235a8446b04128164303c3b, type: 3}
+    artworkScale: 1
+    color: {r: 1, g: 0.4, b: 0.9019608, a: 1}
+    name: "\u30D4\u30FC\u30C1\u59EB"
+    prefab: {fileID: 3745351628402160052, guid: 810bb9540aee2a045ad4ae68946345a5, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: 0f3ff6542b9e31f498fd1156f21e7131, type: 3}
+    artwork: {fileID: 21300000, guid: 79401312091c0f341aafc70b72ea517d, type: 3}
+    artworkScale: 1
+    color: {r: 0.22990493, g: 0.8962264, b: 0, a: 1}
+    name: "\u30E8\u30C3\u30B7\u30FC"
+    prefab: {fileID: 3745351628402160052, guid: 225b7d977b64e68448dd72e96de53d29, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: f0bfcee2ed5e9c84a90645a7e569f553, type: 3}
+    artwork: {fileID: 21300000, guid: 690db49bfd637a240bfd65d5fba8e83d, type: 3}
+    artworkScale: 1
+    color: {r: 0, g: 0.9019608, b: 1, a: 1}
+    name: "\u30ED\u30BC\u30C3\u30BF"
+    prefab: {fileID: 3745351628402160052, guid: d6d758088a659684dbfab091e99e18be, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: 355b29bd0f288ed46856c4b9b8dd0830, type: 3}
+    artwork: {fileID: 21300000, guid: 2bfc6929b1d989f49b40b358593d3822, type: 3}
+    artworkScale: 0.9
+    color: {r: 1, g: 0.87058824, b: 0, a: 1}
+    name: "\u30D1\u30C3\u30AF\u30DE\u30F3"
+    prefab: {fileID: 2617860530350614519, guid: bdad114fc00fad0409dfb123d8c41290, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 0}
+    artwork: {fileID: 0}
+    artworkScale: 1
+    color: {r: 0.9601507, g: 0, b: 1, a: 1}
+    name: "\u30DF\u30BA\u30FB\u30D1\u30C3\u30AF\u30DE\u30F3"
+    prefab: {fileID: 2617860530350614519, guid: af106510acaacf94284b2f034a61558a, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 0}
+    artwork: {fileID: 0}
+    artworkScale: 1
+    color: {r: 0, g: 0.69433475, b: 1, a: 1}
+    name: "\u30D1\u30C3\u30AF\u30FB\u30B8\u30E5\u30CB\u30A2"
+    prefab: {fileID: 2617860530350614519, guid: 74c2683a9a916574db3469da5859a9ae, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: 08159e40baa9b3b46ab2d9639ee60cbe, type: 3}
+    artwork: {fileID: 21300000, guid: 7a41aa90fdd73d149b93c58957148130, type: 3}
+    artworkScale: 1.4
+    color: {r: 0, g: 0.4774542, b: 1, a: 1}
+    name: "\u30ED\u30C3\u30AF\u30DE\u30F3"
+    prefab: {fileID: 7253738437757831171, guid: d1cd985d6dded894cb79e8800ef8dd9f, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: d32dbc5439d928c49909f77122ef1e01, type: 3}
+    artwork: {fileID: 21300000, guid: 7bc76b0adf4593549a5fef4f2b109f94, type: 3}
+    artworkScale: 1.4
+    color: {r: 1, g: 0.14508255, b: 0, a: 1}
+    name: "\u30ED\u30FC\u30EB"
+    prefab: {fileID: 7253738437757831171, guid: 2873165590e26864e8139d34fd3164b0, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: 7905ac162a613b54ca9cb96e62e6ba93, type: 3}
+    artwork: {fileID: 21300000, guid: 4f01216f94d69ef40aaa806fc557d5ff, type: 3}
+    artworkScale: 1.4
+    color: {r: 1, g: 0, b: 0, a: 1}
+    name: "\u30D6\u30EB\u30FC\u30B9"
+    prefab: {fileID: 2116403907064370910, guid: 4d4acc8810e4ad74b8f3bd6ad98d14f0, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 0}
+    artwork: {fileID: 21300000, guid: 296913e014d082542a1379b0b96b864d, type: 3}
+    artworkScale: 1.4
+    color: {r: 0.69803923, g: 0, b: 1, a: 1}
+    name: "\u30D5\u30A9\u30EB\u30C6"
+    prefab: {fileID: 4903572216880836613, guid: db5730eb25544114aae7897036aec976, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: 70695eaee5c9c204496988bce1f27f46, type: 3}
+    artwork: {fileID: 21300000, guid: fb28ad9a68beb8e46a59183aeff27b61, type: 3}
+    artworkScale: 1
+    color: {r: 0, g: 0.5803922, b: 1, a: 1}
+    name: "\u30BD\u30CB\u30C3\u30AF"
+    prefab: {fileID: 1244568929189047168, guid: cbda48dfb8a86fb43be245555ef7f953, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: d311a1a539f67914f9b91232928c6426, type: 3}
+    artwork: {fileID: 21300000, guid: 82764b916fbbb2f43a74c62748a4ebeb, type: 3}
+    artworkScale: 1
+    color: {r: 1, g: 0.87058824, b: 0, a: 1}
+    name: "\u30C6\u30A4\u30EB\u30B9"
+    prefab: {fileID: 7223013615798869005, guid: deec8e95e121bc445b87c2943e925e25, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: b82b7895678e7924abdd88e9bca57707, type: 3}
+    artwork: {fileID: 21300000, guid: f68dc46080f683c4ba495e0e8bcefde1, type: 3}
+    artworkScale: 1
+    color: {r: 1, g: 0.4, b: 0.9019608, a: 1}
+    name: "\u30A8\u30DF\u30FC"
+    prefab: {fileID: 3487268759637620289, guid: 1c982879dd2a1bf4b86b4a6d883137aa, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: 31c322f850396ae4a861fecc94a8c696, type: 3}
+    artwork: {fileID: 0}
+    artworkScale: 1
+    color: {r: 1, g: 0, b: 0, a: 1}
+    name: "\u30CA\u30C3\u30AF\u30EB\u30BA"
+    prefab: {fileID: 3487268759637620289, guid: fd1b42edaef85964698eb99ef667ba70, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 21300000, guid: d12c23f554587ab44b4ede5fdf8dee7b, type: 3}
+    artwork: {fileID: 21300000, guid: e32446abd0f9b5044b712c4183d67306, type: 3}
+    artworkScale: 1
+    color: {r: 0, g: 0.34117648, b: 1, a: 1}
+    name: "\u30BD\u30CB\u30C3\u30AF"
+    prefab: {fileID: 2708694513446790078, guid: d9034a0124d9be348a8e3623bde707d6, type: 3}
+  - unlocked: 1
+    livesIcon: {fileID: 0}
+    artwork: {fileID: 0}
+    artworkScale: 1
+    color: {r: 0.30588236, g: 0, b: 0, a: 1}
+    name: "\u30B7\u30E3\u30C9\u30A6"
+    prefab: {fileID: 2708694513446790078, guid: d9034a0124d9be348a8e3623bde707d6, type: 3}

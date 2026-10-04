@@ -1,0 +1,42 @@
+# Blender 4.0.1 MTL File: 'None'
+# www.blender.org
+
+newmtl A_SOLID__ol
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd it000_ol_BM.png
+
+newmtl A_S_ALPHA__face
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd it000_face_BM.png
+map_d it000_face_BM.png
+
+newmtl A_S_ALPHA__met
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd it000_met_BM.png
+map_d it000_met_BM.png
+
+newmtl A_S_ALPHA__met2
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd it000_met_BM.png
+map_d it000_met_BM.png

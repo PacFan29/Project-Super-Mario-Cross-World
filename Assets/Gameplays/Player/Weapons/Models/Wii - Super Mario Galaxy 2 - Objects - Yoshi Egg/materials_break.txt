@@ -1,0 +1,19 @@
+YoshiEggBody_v
+==============
+  Textures:
+    - YoshiEgg
+
+  Ambient Colors:
+    - 128, 128, 128, 128
+
+  Color Registers:
+    - -5, -13, -13, -90
+    - 0, 0, 0, 255
+    - 1023, 1023, 1023, 255
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), then add (-5, -13, -13)
+         A = (lerp from (tex #1 A) to 32 using (vertex A)), then add -90, divide by 2
+    2: RGB = ((vertex RGB) * (prev. A)), then add (prev. RGB)
+         A = (64 * (vertex A)), then add 255, multiply by 2
+

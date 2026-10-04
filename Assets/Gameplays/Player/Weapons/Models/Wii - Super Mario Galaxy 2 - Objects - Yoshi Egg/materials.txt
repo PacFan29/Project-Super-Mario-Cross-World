@@ -1,0 +1,28 @@
+YoshiEggBody
+============
+  Textures:
+    - YoshiEgg
+    - EnvHilight
+        Scale: 1, 1.7333984375
+
+  Ambient Colors:
+    - 128, 128, 128, 128
+
+  Constant Colors:
+    - 180, 180, 180, 0
+
+  Material Colors:
+    - 204, 204, 204, 255
+    - 204, 204, 204, 255
+
+  Color Registers:
+    - 0, 0, 0, -64
+    - 1023, 1023, 1023, 255
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB))
+         A = (lerp from (tex #1 A) to 32 using (vertex A)), then add -64, multiply by 2
+    2: RGB = ((vertex RGB) * (prev. A)), then add (prev. RGB)
+         A = (64 * (vertex A)), then add -64, multiply by 2
+    3: RGB = ((180, 180, 180) * (tex #2 RGB)), then add (prev. RGB)
+         A = (prev. A)

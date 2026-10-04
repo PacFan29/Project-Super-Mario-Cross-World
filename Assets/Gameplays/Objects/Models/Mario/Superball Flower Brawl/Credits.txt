@@ -1,0 +1,25 @@
+Superball Flower, from Super Mario Land
+
+Model and all textures made from scratch by Peardian using Cinema 4D and Fireworks.
+
+
+Info:
+I made this after studying the truly inspirational 3D artwork in Brawl.
+The style is mostly based on regular Super Mario items, with a hint of Brawl's shading.
+The roundness of the flower is slightly inspired by Super Mario Bros. Wonder.
+The model has eyes to look modern, but you can remove them to look more authentic.
+There are four different color sets for the flower and ball.
+The first color uses sepia petals and green leaves. The Superball is gray like in the official artwork.
+The second color is blue, based on an image I found on Mariowiki. I don't know its origin. The Superball is green like in the manga.
+The third color is sepiatoned, like in Super Mario Maker and Nintendo Switch Online.
+The fourth color is green, like in the alternate Switch Online palette based on original Game Boys.
+There are five different environment options, plus a specular highlight map, so choose the one you like best.
+I included two mask textures that correspond to the petals and center of the flower, so that it can be made to glow like the sprites.
+Unlike normal, I didn't aim for a particular scale with this one. Please resize as needed.
+
+
+If you have any comments or questions, my e-mail address is peardian@gmail.com
+I have never done any Brawl hacking, nor do I know how. Please don't ask me to help you.
+
+
+Super Mario Land belongs to Nintendo

@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: JP-TextData Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: JP-TextData
+  m_TableCollectionNameGuidString: a18a46459c245ae418c3ee6c4b85c2c7
+  m_Entries:
+  - m_Id: 17473318912
+    m_Key: Results-JP-Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27569211365371904
+    m_Key: Results-JP-Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27569244210966528
+    m_Key: Results-JP-DamageTaken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27569268097527808
+    m_Key: Results-JP-MaxCombo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27569347587977216
+    m_Key: Results-JP-Rings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27569377329786880
+    m_Key: Results-JP-AverageSpeed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27569439967522816
+    m_Key: Results-JP-NoDamage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27569492815753216
+    m_Key: Results-JP-NoMiss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27569529356529664
+    m_Key: Results-JP-NextRank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27569748135620608
+    m_Key: Results-JP-Total
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65020968508829696
+    m_Key: Results-JP-ClearTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217802431838007296
+    m_Key: Results-JP-ItemCollected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217802433285042176
+    m_Key: Results-JP-WeaknessRatio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217802434459447296
+    m_Key: Results-JP-MaxChain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 217802434887266304
+    m_Key: Results-JP-HitRatio
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4193455159743873049
+  references:
+    version: 2
+    RefIds:
+    - rid: 4193455159743873049
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1736651555782

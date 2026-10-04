@@ -1,0 +1,274 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a7e4f33792c8f4cbd8bc0bad2f4546, type: 3}
+  m_Name: BadgeList
+  m_EditorClassIdentifier: 
+  badges:
+  - icon: {fileID: 0}
+    name: "\u3075\u308F\u3063\u3068\u30B8\u30E3\u30F3\u30D7"
+    effect: 0
+    effectValue: 1
+    classification: 0
+    target: 0
+    price: 500
+  - icon: {fileID: 0}
+    name: "\u30B9\u30D4\u30FC\u30C9\u30A2\u30C3\u30D7"
+    effect: 1
+    effectValue: 1.2
+    classification: 0
+    target: 0
+    price: 500
+  - icon: {fileID: 0}
+    name: "\u653B\u6483\u30A2\u30C3\u30D7"
+    effect: 2
+    effectValue: 1
+    classification: 1
+    target: 0
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u9632\u5FA1\u30A2\u30C3\u30D7"
+    effect: 3
+    effectValue: 1
+    classification: 1
+    target: 0
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u81EA\u52D5\u30D0\u30EA\u30A2"
+    effect: 5
+    effectValue: 1
+    classification: 1
+    target: 1
+    price: 1500
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30D5\u30A1\u30A4\u30A2"
+    effect: 4
+    effectValue: 1
+    classification: 1
+    target: 1
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30A2\u30A4\u30B9"
+    effect: 4
+    effectValue: 2
+    classification: 1
+    target: 1
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30B5\u30F3\u30C0\u30FC"
+    effect: 4
+    effectValue: 3
+    classification: 1
+    target: 1
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30D6\u30FC\u30E1\u30E9\u30F3"
+    effect: 4
+    effectValue: 4
+    classification: 1
+    target: 1
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30A2\u30EF"
+    effect: 4
+    effectValue: 5
+    classification: 1
+    target: 1
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30A6\u30A3\u30F3\u30C9"
+    effect: 4
+    effectValue: 6
+    classification: 1
+    target: 1
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30B9\u30FC\u30D1\u30FC\u30DC\u30FC\u30EB"
+    effect: 4
+    effectValue: 7
+    classification: 1
+    target: 1
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30D0\u30EA\u30A2"
+    effect: 6
+    effectValue: 1
+    classification: 1
+    target: 1
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30D5\u30EC\u30A4\u30E0\u30D0\u30EA\u30A2"
+    effect: 6
+    effectValue: 2
+    classification: 1
+    target: 0
+    price: 1250
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30A2\u30AF\u30A2\u30D0\u30EA\u30A2"
+    effect: 6
+    effectValue: 3
+    classification: 1
+    target: 0
+    price: 1250
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30B5\u30F3\u30C0\u30FC\u30D0\u30EA\u30A2"
+    effect: 6
+    effectValue: 4
+    classification: 1
+    target: 0
+    price: 1250
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30DD\u30A4\u30BA\u30F3\u30D0\u30EA\u30A2"
+    effect: 6
+    effectValue: 5
+    classification: 1
+    target: 0
+    price: 1250
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30D5\u30A9\u30FC\u30B9\u30D0\u30EA\u30A2"
+    effect: 6
+    effectValue: 6
+    classification: 1
+    target: 0
+    price: 1500
+  - icon: {fileID: 0}
+    name: "\u3044\u3064\u3067\u3082\u30A2\u30EB\u30DE\u30B2\u30C9\u30F3\u30D0\u30EA\u30A2"
+    effect: 6
+    effectValue: 7
+    classification: 1
+    target: 0
+    price: 2000
+  - icon: {fileID: 0}
+    name: "\u30B9\u30B3\u30A2\u30A2\u30C3\u30D7"
+    effect: 7
+    effectValue: 1.2
+    classification: 1
+    target: 0
+    price: 5000
+  - icon: {fileID: 0}
+    name: "\u3054\u307B\u3046\u3073\u30B3\u30A4\u30F3"
+    effect: 8
+    effectValue: 1
+    classification: 1
+    target: 1
+    price: 500
+  - icon: {fileID: 0}
+    name: "\u5FA9\u5E30\u30B8\u30E3\u30F3\u30D7"
+    effect: 9
+    effectValue: 1
+    classification: 1
+    target: 0
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u30C0\u30A6\u30B8\u30F3\u30B0"
+    effect: 10
+    effectValue: 1
+    classification: 1
+    target: 0
+    price: 1500
+  - icon: {fileID: 0}
+    name: "\u30B9\u30D1\u30A4\u30AF\u30D6\u30FC\u30C4"
+    effect: 12
+    effectValue: 1
+    classification: 1
+    target: 0
+    price: 500
+  - icon: {fileID: 0}
+    name: "\u81EA\u52D5\u30B4\u30FC\u30EB\u30C9\u30AD\u30CE\u30B3\uFF08\uFF25\u7F36\uFF09"
+    effect: 13
+    effectValue: 1
+    classification: 1
+    target: 1
+    price: 3000
+  - icon: {fileID: 0}
+    name: "\u81EA\u52D5100\u30EA\u30F3\u30B0\u30AB\u30D7\u30BB\u30EB"
+    effect: 13
+    effectValue: 1
+    classification: 1
+    target: 3
+    price: 3000
+  - icon: {fileID: 0}
+    name: "\u900F\u660E"
+    effect: 14
+    effectValue: 1
+    classification: 2
+    target: 0
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u30B8\u30A7\u30C3\u30C8\u30E9\u30F3"
+    effect: 15
+    effectValue: 1
+    classification: 2
+    target: 1
+    price: 2000
+  - icon: {fileID: 0}
+    name: "\u30D0\u30CD"
+    effect: 17
+    effectValue: 1
+    classification: 2
+    target: 0
+    price: 2000
+  - icon: {fileID: 0}
+    name: "\u30D6\u30FC\u30B9\u30C8\u8EFD\u6E1B"
+    effect: 18
+    effectValue: 1
+    classification: 1
+    target: 3
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u81EA\u52D510\u30EA\u30F3\u30B0"
+    effect: 19
+    effectValue: 10
+    classification: 1
+    target: 3
+    price: 1000
+  - icon: {fileID: 0}
+    name: "\u3054\u307B\u3046\u3073\u30EA\u30F3\u30B0"
+    effect: 8
+    effectValue: 1
+    classification: 1
+    target: 3
+    price: 500
+  - icon: {fileID: 0}
+    name: "\u30B9\u30FC\u30D1\u30FC\u30D6\u30FC\u30B9\u30C8"
+    effect: 16
+    effectValue: 1
+    classification: 2
+    target: 3
+    price: 2000
+  - icon: {fileID: 0}
+    name: "\u30A8\u30CD\u30EB\u30AE\u30FC\u30D0\u30E9\u30F3\u30B5\u30FC"
+    effect: 20
+    effectValue: 1
+    classification: 1
+    target: 2
+    price: 500
+  - icon: {fileID: 0}
+    name: "\u30A8\u30CD\u30EB\u30AE\u30FC\u30D0\u30E9\u30F3\u30B5\u30FCNEO"
+    effect: 21
+    effectValue: 1
+    classification: 1
+    target: 2
+    price: 1500
+  - icon: {fileID: 0}
+    name: "\u30AA\u30FC\u30C8\u30C1\u30E3\u30FC\u30B8\u30C1\u30C3\u30D7"
+    effect: 22
+    effectValue: 1
+    classification: 1
+    target: 2
+    price: 2000
+  - icon: {fileID: 0}
+    name: "\u899A\u9192\u30C1\u30C3\u30D7"
+    effect: 23
+    effectValue: 1
+    classification: 1
+    target: 2
+    price: 7500
