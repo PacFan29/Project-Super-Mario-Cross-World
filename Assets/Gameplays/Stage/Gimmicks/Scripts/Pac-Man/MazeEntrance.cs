@@ -91,6 +91,6 @@ public class MazeEntrance : MonoBehaviour
 
         yield return new WaitForSeconds(1.5f);
 
-        SceneManager.LoadScene(10 + mazeIndex);
+        SceneManager.LoadScene(12 + mazeIndex);
     }
 }

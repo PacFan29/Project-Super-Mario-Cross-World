@@ -1,0 +1,158 @@
+I recommend playing with a gamepad.
+
+<Common Actions>
+L-Stick: Move
+A: Jump
+Hold RT or X + L-Stick: Dash (Team Mega Man: Hold RT only. Excludes Team Sonic.)
+RB: Crouch
+RB + L-Stick: Move while crouching
+RB in mid-air: Ground Pound (Excludes Team Pac-Man and Team Sonic).
+X: Fireball, etc. (Excludes Team Mega Man.)
+Press X near an object: Pick up object
+Hold object and release X: Throw object
+Hold object, hold RB, and release X: Place object down
+Hold object, hold LB, and release X: Throw object upwards
+
+
+<Team Mario>
+Hold RB + A: Crouch jump
+RB + A while moving: Long jump
+RB + X: Roll
+A while rolling: Rolling long jump
+RB + X in mid-air: Somersault (Body attack)
+Hold L-Stick in opposite direction + A: Side somersault
+A while touching a wall: Wall kick
+A after Ground Pound: Ground Pound jump
+
+・Princess Peach
+Hold A in mid-air: Float jump
+
+・Yoshi
+Hold A in mid-air: Flutter jump
+X: Eat enemy
+Y: Throw egg
+RB while aiming egg: Cancel egg throw
+
+・Rosalina
+X: Spin (Double jump in mid-air)
+
+
+<Team Pac-Man>
+A in mid-air or (LB or RB) in mid-air: Butt bounce
+Hold Y: Pac-Dash
+Y in mid-air: Flip kick
+
+Hidden Skill: Fruit Target
+LT: Fruit Target
+LT or X while summoned: Throw
+LB or RB while summoned: Hold
+
+
+<Team Mega Man>
+X: Weapon attack
+RB + A: Slide
+
+・Mega Man
+X: Mega Buster
+Hold X: Charge Shot
+Y: Rush Coil
+B: Rush Jet
+
+~Special Weapons~
+Rush Coil (Energy cost: 2)
+Rush Jet (Energy cost: 1 per 0.5 seconds)
+
+~Special Weapons (Power-ups)~
+Fire Storm (Energy cost: 2) (Acquired by picking up the Fire Flower)
+Ice Slasher (Energy cost: 2) (Acquired by picking up the Ice Flower)
+Thunder Beam (Energy cost: 4) (Acquired by picking up the Thunder Mushroom)
+Quick Boomerang (Energy cost: 0.25) (Acquired by picking up the Boomerang Flower)
+Bubble Lead (Energy cost: 1) (Acquired by picking up the Bubble Flower)
+Air Shooter (Energy cost: 2) (Acquired by picking up the Wind Flower)
+Bounce Ball (Energy cost: 2) (Acquired by picking up the Super Ball Flower)
+
+~Special Weapons (8 Major Elements)~
+Wide Laser (Energy cost: 1 per 1 second)
+Blade Catcher (Energy cost: 1)
+Water Jet (Energy cost: 1 per 1 second)
+Brave Spear (Energy cost: 0.5)
+Spread Dynamite (Energy cost: 2)
+Boulder Shield (Energy cost: 2)
+Flare Burst (Energy cost: 3)
+Flash Dash (Energy cost: 1–2)
+
+・Roll
+X: Broom Attack
+X (Hold): Charge
+Y: Rush Coil
+B: Rush Jet
+
+~Special Weapons~
+Rush Coil (Energy cost: 2)
+Rush Jet (Energy cost: 1 per 0.5 seconds)
+Vacuum Arm (Energy cost: 1 per 0.5 seconds)
+*Power-ups from Fire Flower, Ice Flower, and Thunder Mushroom are the same as Mega Man's.
+*8 Major Element weapons are also the same as Mega Man's.
+
+・Proto Man
+X: Proto Buster
+Hold X: Proto Strike
+RB + A: Dash
+A while dashing: Dash Jump
+RB: Proto Shield
+Y: Proto Coil
+B: Proto Jet
+
+~Special Weapons~
+Proto Coil (Energy cost: 2)
+Proto Jet (Energy cost: 1 per 0.5 seconds)
+*Power-ups from Fire Flower, Ice Flower, and Thunder Mushroom function the same as for Mega Man.
+*The eight elemental weapons function the same as for Mega Man.
+
+・Bass
+A in mid-air: Double Jump
+Hold X: Bass Buster *Rapid-fire
+RB + A: Dash
+A while dashing: Dash Jump
+Y or B: Treble Boost
+
+~Special Weapons~
+Treble Boost (Energy cost: 1 per 0.5 seconds)
+*Power-ups from Fire Flower, Ice Flower, and Thunder Mushroom function the same as for Mega Man.
+*The eight elemental weapons function the same as for Mega Man.
+
+
+<Team Sonic>
+A: Spin Jump
+RB while moving: Roll
+RB + Rapidly press A: Spin Dash
+RT: Spin Dash (hold to charge)
+RB in mid-air: Stomp
+
+・Classic Sonic
+Hold A in mid-air: Drop Dash
+
+・Tails
+Hold A in mid-air: Propeller Flight
+Y: Tail Spin Attack
+
+・Amy
+A in mid-air: Double Jump
+Hold A after double jump to land: Hammer Rush Attack
+Y: Hammer Attack
+RB + Y: Hammer Jump
+
+・Knuckles
+Hold A in mid-air: Glide
+Y: Punch
+
+・Modern Sonic
+(A or X) while jumping: Jump Dash / Homing Attack
+A while clinging to a wall: Wall Jump (functions almost identically to a wall kick)
+RT: Boost
+LT: Drift
+B: Crouch
+B + Rapidly press A: Spin Dash
+B in mid-air: Stomp
+LB or RB: Quick Step
+Y near Rings: Light Dash

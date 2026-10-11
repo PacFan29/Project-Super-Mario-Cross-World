@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Gameplays/Scenes/Disclaimer.unity
+    guid: 654f391c0b6203349a0d68f33148bd15
+  - enabled: 1
     path: Assets/Gameplays/Scenes/InspiredBy.unity
     guid: 6d2c2518e9d48884e8491596fdb19832
   - enabled: 1
@@ -36,14 +39,17 @@ EditorBuildSettings:
     path: Assets/Gameplays/Scenes/Stages/Test/TestStage.unity
     guid: d05c0bfc89522c64e997aa0237deb764
   - enabled: 1
+    path: Assets/Gameplays/Scenes/Stages/Test/SonicTestStage.unity
+    guid: c9936f3af04c80846b6a51c2942804fd
+  - enabled: 1
     path: Assets/Gameplays/Scenes/Mazes/TestMaze.unity
     guid: ef6d132a5cdfb6446978d5b9c23d692b
   - enabled: 1
     path: Assets/Gameplays/Scenes/ResultScreen.unity
     guid: 8b405ad5d1d2f684eaf2aed8b3d21b72
   - enabled: 1
-    path: Assets/Gameplays/Scenes/GameOverOld.unity
-    guid: 169ed89184acfad419637266a9ccb577
+    path: Assets/Gameplays/Scenes/GameOver.unity
+    guid: 5ae5b0b0bb6dde64dafb31c35f85fbd7
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f76489fa2a4297d468150c5fd87c8ad7, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 044922be283c51549b8723967242c52c, type: 2}

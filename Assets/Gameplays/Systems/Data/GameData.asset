@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GameData
   m_EditorClassIdentifier: 
   fileNo: 0
-  coins: 25546
+  coins: 4704
   HUDType: 2
   character: 3
   keyItem: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
   - badges: ffffffffffffffffffffffff
   - badges: ffffffffffffffffffffffff
   stockItems:
-  - amounts: 0
+  - amounts: 1
     megaManOnly: 0
     exceptSonic: 1
     special: 0
@@ -94,9 +94,9 @@ MonoBehaviour:
     limit: 1
     sprites:
     - {fileID: 21300000, guid: 9046cc54e02b8674fade9302636e001c, type: 3}
-  greenStars: 000000
+  greenStars: 01000000000000
   checkpointScore: 0
   totalTime: 0
   checkpointCoins: 0
-  isCpPassed: 0
-  CpPosition: {x: 0, y: 0, z: 0}
+  isCpPassed: 1
+  CpPosition: {x: -102.3, y: 1.79, z: 1.8}
